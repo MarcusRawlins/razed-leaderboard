@@ -1,3 +1,10 @@
+# REESE-AI KNOWLEDGE BASE: R3-Studios - Projects - Razed-Leaderboard
+# DATE CREATED: 2026-02-10 | LAST UPDATED: 2026-02-10
+# PURPOSE: R3-Studios - Projects - Razed-Leaderboard content for strategic guidance
+# KEY TOPICS: marketing, client psychology, brand consistency
+# USAGE RULES: Always reference gold examples when discussing R3-Studios - Projects - Razed-Leaderboard
+# EXAMPLES: gold/r3-studios/projects/razed-leaderboard/README.md
+
 # Razed Leaderboard
 
 A clean, professional leaderboard website for tracking and displaying user rankings.
