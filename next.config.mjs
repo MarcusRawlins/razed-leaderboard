@@ -20,7 +20,20 @@ const legacy = [
   ["/login", "/chromatones"],
 ];
 
-const nextConfig = {
+// DEMO_EXPORT=1 builds a static copy for GitHub Pages: no server, so no redirects,
+// headers or API route (scripts/build-demo.sh sets the route aside), and forms fake success.
+const demo = process.env.DEMO_EXPORT === "1";
+const basePath = process.env.BASE_PATH ?? "";
+
+const demoConfig = {
+  output: "export",
+  basePath,
+  trailingSlash: true,
+  images: { unoptimized: true },
+  env: { NEXT_PUBLIC_DEMO: "1" },
+};
+
+const nextConfig = demo ? demoConfig : {
   poweredByHeader: false,
   async redirects() {
     return legacy.map(([source, destination]) => ({ source, destination, permanent: true }));

@@ -44,6 +44,10 @@ Everything is optional. With nothing set, the site still works: buy buttons beco
 | `NEXT_PUBLIC_TIBET_VIDEO_ID` | Vimeo ID of the "Tibet" performance on Our story |
 | `LEAD_WEBHOOK_URL` | Where every form posts (CRM, email tool, Zapier or Make) |
 
+## Demo site (GitHub Pages)
+
+`scripts/build-demo.sh` builds a static copy with a "preview" banner, no checkout and forms that only pretend to send. The `Demo site` workflow runs it on every push and publishes it to the `gh-pages` branch, so it appears at `https://<owner>.github.io/<repo>/`. Pages has to be switched on once in the repo's Settings → Pages (source: `gh-pages` branch), and on a free GitHub plan the repo must be public.
+
 ## Deploy
 
 It deploys to Vercel with zero configuration, or to Render as a Node web service (`npm install && npm run build`, start `npm start`).

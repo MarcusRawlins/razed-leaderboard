@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { Suspense } from "react";
 import { ContactForm } from "@/components/LeadForm";
 import { brand } from "@/lib/brand";
 
@@ -7,10 +8,7 @@ export const metadata: Metadata = {
   description: "Questions about an order, reserving a kit, or licensing Harmonic Energy for your products. A real person replies within two business days.",
 };
 
-type Props = { searchParams: Promise<{ topic?: string; kit?: string }> };
-
-export default async function Contact({ searchParams }: Props) {
-  const { topic, kit } = await searchParams;
+export default function Contact() {
   const { email, phone, address, responseTime } = brand.contact;
   return (
     <section className="container-x grid gap-12 py-16 sm:py-24 lg:grid-cols-[1fr_1.4fr]">
@@ -50,7 +48,9 @@ export default async function Contact({ searchParams }: Props) {
           )}
         </dl>
       </div>
-      <ContactForm initialTopic={topic} kit={kit} />
+      <Suspense fallback={<ContactForm />}>
+        <ContactForm fromQuery />
+      </Suspense>
     </section>
   );
 }

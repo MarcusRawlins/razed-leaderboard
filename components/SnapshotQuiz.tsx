@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { useState } from "react";
 import { snapshotQuestions } from "@/lib/content";
+import { submitLead } from "./LeadForm";
 
 const max = snapshotQuestions.length * 3;
 
@@ -66,12 +67,12 @@ export function SnapshotQuiz() {
                 e.preventDefault();
                 setEmailState("sending");
                 const email = new FormData(e.currentTarget).get("email");
-                const res = await fetch("/api/lead", {
-                  method: "POST",
-                  headers: { "Content-Type": "application/json" },
-                  body: JSON.stringify({ type: "snapshot", email, score, max, reading: reading.title, answers }),
-                }).catch(() => null);
-                setEmailState(res?.ok ? "sent" : "error");
+                try {
+                  await submitLead({ type: "snapshot", email, score, max, reading: reading.title, answers });
+                  setEmailState("sent");
+                } catch {
+                  setEmailState("error");
+                }
               }}
             >
               <label htmlFor="snap-email" className="block font-display text-xl">

@@ -1,10 +1,13 @@
 "use client";
 
+import { useSearchParams } from "next/navigation";
 import { useState } from "react";
 
 type Status = "idle" | "sending" | "sent" | "error";
 
-async function submit(payload: Record<string, unknown>) {
+export async function submitLead(payload: Record<string, unknown>) {
+  // The GitHub Pages demo has no server: pretend the send worked.
+  if (process.env.NEXT_PUBLIC_DEMO === "1") return;
   const res = await fetch("/api/lead", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
@@ -18,7 +21,7 @@ function useSubmit() {
   async function send(payload: Record<string, unknown>) {
     setStatus("sending");
     try {
-      await submit(payload);
+      await submitLead(payload);
       setStatus("sent");
     } catch {
       setStatus("error");
@@ -54,7 +57,16 @@ export function NewsletterForm({ source = "footer" }: { source?: string }) {
 
 const productTypes = ["Apparel", "Cosmetics and personal care", "Jewelry", "Food and beverage", "Supplements", "Home and pet", "Other"];
 
-export function ContactForm({ initialTopic = "customer", kit }: { initialTopic?: string; kit?: string }) {
+export function ContactForm({ fromQuery = false }: { fromQuery?: boolean }) {
+  return fromQuery ? <ContactFormFromQuery /> : <ContactFormInner />;
+}
+
+function ContactFormFromQuery() {
+  const params = useSearchParams();
+  return <ContactFormInner initialTopic={params.get("topic") ?? undefined} kit={params.get("kit") ?? undefined} />;
+}
+
+function ContactFormInner({ initialTopic = "customer", kit }: { initialTopic?: string; kit?: string }) {
   const [topic, setTopic] = useState(initialTopic === "licensing" ? "licensing" : initialTopic === "order" ? "order" : "customer");
   const { status, send } = useSubmit();
 
