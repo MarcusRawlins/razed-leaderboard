@@ -16,9 +16,9 @@ const steps = [
 ];
 
 const reasons = [
-  { title: "A story customers can hear", body: "Your product carries a piece of music with a 1998 origin and a violinist behind it. That’s a story, not a spec sheet." },
-  { title: "Fits your existing line", body: "Drops, cells and finishes slot into production you already run, from a one-person studio to a factory." },
-  { title: "Your brand stays first", body: "We stay behind your label. You decide how much to say about the technology." },
+  { title: "A story customers can hear", body: "Music written in 1998 by a violinist. That’s a story, not a spec sheet." },
+  { title: "Fits your existing line", body: "Drops, cells and finishes slot into the production line you already run." },
+  { title: "Your brand stays first", body: "We stay behind your label. You decide what to say about us." },
 ];
 
 export default function Business() {
@@ -27,8 +27,8 @@ export default function Business() {
       <PageHero
         dark
         eyebrow="For business"
-        title="Your product, with music inside."
-        intro="For more than two decades, companies have added Harmonic Energy to things they already make: fabric dye, labels, shampoo, supplements, jewelry, enamel and water. Your customers get a product that does one more thing. You keep the credit."
+        title="Build it into your products."
+        intro="Brands have licensed Harmonic Energy for more than 20 years, in dyes, labels, shampoo, supplements, jewelry and water. Your label stays on the front."
       >
         <Link href="/contact?topic=licensing" className="btn-brass">
           Book a licensing call
@@ -39,7 +39,7 @@ export default function Business() {
       </PageHero>
 
       <section className="container-x py-20 sm:py-28">
-        <SectionHead eyebrow="Why brands add it" title="One more reason to choose yours." />
+        <SectionHead eyebrow="Why brands add it" title="Give customers one more reason." />
         <div className="mt-12 grid gap-6 md:grid-cols-3">
           {reasons.map((r) => (
             <div key={r.title} className="card">
@@ -52,7 +52,7 @@ export default function Business() {
 
       <section className="bg-white/60 py-20 sm:py-28">
         <div className="container-x">
-          <SectionHead eyebrow="What it fits" title="Six industries, one pattern." intro="From artisans to factories, here’s where partners build it in." />
+          <SectionHead eyebrow="What it fits" title="Where it fits." intro="From one-person studios to factories." />
           <div className="mt-12 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
             {industries.map((i) => (
               <div key={i.name} className="card !bg-ivory">
@@ -95,15 +95,14 @@ export default function Business() {
             <SectionHead eyebrow="Pricing" title="Less than you’d expect." />
             {/* TODO(client): replace with a real starting range if you’re happy to publish one. */}
             <p className="mt-6 text-lg text-stone">
-              Licensing is priced by product, volume and territory, and it’s designed to fit artisan budgets as well as factory runs. We’ll give
-              you a clear number after the first call.
+              Pricing depends on product, volume and territory, and it works for small studios as well as factories. You’ll have a number after
+              the first call.
             </p>
             <div id="distribution" className="mt-10 scroll-mt-24">
               <h3 className="text-2xl">Distribution</h3>
               {/* TODO(client): the original Distribution page couldn't be read; merge its content here. */}
               <p className="mt-3 text-lg text-stone">
-                We work with distributors who want to carry Harmonic Energy products or represent licensing in their region. Tell us your
-                territory and channels.
+                Want to carry our products or represent licensing in your region? Tell us your territory and channels.
               </p>
               <Link href="/contact?topic=licensing" className="mt-4 inline-block font-bold text-brass-deep underline-offset-4 hover:underline">
                 Talk to us about distribution →

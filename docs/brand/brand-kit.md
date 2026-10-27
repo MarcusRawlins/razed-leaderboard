@@ -43,7 +43,7 @@ Warm, plain, specific. We sound like a musician explaining their craft, not a la
 
 **Words we never use in marketing:** cure, heal, treat, prevent, remedy, protect/shield (from EMF), detox, anti-aging, proven, clinically proven, quantum, entangled, millions.
 
-**The one claim we make:** products carrying Harmonic Energy help the body's natural energy field hold a balanced, steady state while the product is present. Always paired with the standard disclaimer (see `lib/content.ts`, `DISCLAIMER`). This still needs counsel's sign-off.
+**The one claim we make:** products carrying Harmonic Energy help your body's natural energy field stay balanced while you carry them. Always paired with the standard disclaimer (see `lib/content.ts`, `DISCLAIMER`). This still needs counsel's sign-off.
 
 ## Logo
 

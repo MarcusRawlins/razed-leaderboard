@@ -2,7 +2,7 @@
 // Claims are kept to the brand's one defensible claim; see docs/brand/brand-kit.md.
 
 export const CORE_CLAIM =
-  "Products carrying Harmonic Energy help the body’s natural energy field hold a balanced, steady state for as long as the product is present.";
+  "Products carrying Harmonic Energy help your body’s natural energy field stay balanced while you carry them.";
 
 export const DISCLAIMER =
   "Our products are not a substitute for the care of a physician. They are not intended to diagnose, treat, cure or prevent any disease. Biofield balancing is not recognized by the FDA, and these statements have not been evaluated by it. If you have a medical condition, talk to your doctor and never stop a prescribed medication. Individual experiences vary, and we make no promise beyond helping the biofield hold its balance.";
@@ -22,17 +22,17 @@ export type Kit = {
 };
 
 const liquilightUse = [
-  "Concentrate: add 3–5 drops to any bottle up to 16 oz, such as shampoo, lotion, hand soap, dish soap, floor cleaner or a water bottle.",
+  "Concentrate: 3–5 drops in any bottle up to 16 oz, like shampoo, lotion, soap or a water bottle.",
 ];
 
 export const kits: Kit[] = [
   {
     slug: "small-personal-kit",
     name: "Small Personal Kit",
-    short: "A pendant, a concentrate and a phone rider. The easiest way to start.",
+    short: "A pendant, drops and a phone tag. The easiest way to start.",
     badge: "Best first step",
     description:
-      "Everything you need to try all three ways of carrying Harmonic Energy for a few weeks: one to wear, one to add to what you already use, and one for your phone.",
+      "One thing to wear, one to add, one for your phone. Enough to try all three for a month.",
     contents: [
       "B-Cell Pendant",
       "B-Liquilight-C concentrate (90-drop bottle)",
@@ -43,17 +43,17 @@ export const kits: Kit[] = [
       ...liquilightUse,
       "Attach the Wave Rider to the back of your phone or case.",
     ],
-    forWhom: "First-timers, and anyone buying a gift.",
+    forWhom: "First-timers and gifts.",
     price: null,
     checkoutEnv: "NEXT_PUBLIC_CHECKOUT_SMALL_KIT",
   },
   {
     slug: "full-personal-kit",
     name: "Full Personal Kit",
-    short: "The full household set: wear it, add it, spray it on food, plants and flowers.",
+    short: "The whole-home set, with sprays for food, plants and flowers.",
     badge: "Most complete",
     description:
-      "Everything in the Small Kit and more: raw cells for your own jewelry, a BioLux pendant, and three sprays for food and drinks, houseplants and cut flowers. Add three extra Small Kits to share with family.",
+      "Everything in the Small Kit, plus raw cells for your own jewelry, a BioLux pendant and three sprays. Add three Small Kits to share.",
     contents: [
       "Two raw B-Cells, to tape to a pendant, bracelet or watch band",
       "Four-in-One Phone Wave Rider",
@@ -71,17 +71,17 @@ export const kits: Kit[] = [
       "Plant spray: one or two pumps per plant, a few times a week.",
       "Flower spray: one or two pumps a day.",
     ],
-    forWhom: "Households that want to bring it into every room.",
+    forWhom: "Households and families.",
     price: null,
     checkoutEnv: "NEXT_PUBLIC_CHECKOUT_FULL_KIT",
   },
   {
     slug: "tech-sample-set",
     name: "Tech Sample Set",
-    short: "All 22 carrier formats in one box, for product developers.",
+    short: "All 22 formats in one box, for product teams.",
     badge: "For brands",
     description:
-      "Every format we make, for teams evaluating Harmonic Energy for their own products: cells, signal riders, liquids, oils and finishes for people, animals, plants and produce.",
+      "Every format we make, so your team can test them on your own materials: cells, signal tags, liquids, oils and finishes.",
     contents: [
       "Cells: B-Cell, A-Cell, P-Cell, Pr-Cell",
       "Signal cells: E B-Cell, E A-Cell, E P-Cell, E Pr-Cell",
@@ -90,8 +90,8 @@ export const kits: Kit[] = [
       "Oils: B-Oil and B-Oil-C",
     ],
     howToUse: [
-      "Each format comes with a short description of where it fits in production.",
-      "Book a call and we’ll walk your team through which carrier suits your materials.",
+      "Each format comes with a note on where it fits in production.",
+      "Book a call and we’ll help you pick the right one.",
     ],
     forWhom: "Manufacturers, product developers and distributors.",
     price: null,
@@ -104,45 +104,45 @@ export const carriers = [
     name: "Sound",
     year: "1998",
     product: "Harmonic Energy music",
-    body: "The original compositions, recorded on real instruments. Still the source of everything else.",
+    body: "The original music, recorded on real instruments. The source of everything else.",
     where: "Albums and the Chromatones library",
   },
   {
     name: "Cells",
     year: "2003",
     product: "BioCell",
-    body: "A confetti-sized tag that echoes the pattern off your own field. No battery, nothing to charge.",
+    body: "A tag the size of confetti, set into jewelry, labels and clothing. No battery.",
     where: "Pendants, bracelets, labels, clothing",
   },
   {
     name: "Signal",
     year: "2009",
     product: "E-BioCell / Wave Rider",
-    body: "A tag that rides the Wi-Fi, Bluetooth and phone signals already around you, so it reaches a whole room.",
+    body: "A tag that rides your phone, Wi-Fi and Bluetooth signals to fill a room.",
     where: "Phones, chargers, home and car sets",
   },
   {
     name: "Light & water",
     year: "2012",
     product: "Liquilight",
-    body: "Water infused with the pattern by our Electromagnetic Pattern Infuser, then added to things you already use.",
+    body: "Water infused with the music, added to dyes, cosmetics, food and sprays.",
     where: "Dyes, inks, cosmetics, food, sprays",
   },
   {
     name: "Pairs",
     year: "2021",
     product: "QUID",
-    body: "Paired products that stay linked to each other after they leave our studio.",
+    body: "Products made in matched pairs that stay linked after they ship.",
     where: "Sets and multi-item programs",
   },
 ];
 
 export const timeline = [
-  { year: "1990s", title: "Curiosity and research", body: "Measurements of how molecules bond and pulse are turned into ratios, rhythms and tones." },
-  { year: "1998", title: "The music", body: "The first album, Rhythm of the Light, is released after an early trial in a hospital emergency department." },
-  { year: "2003", title: "BioCell", body: "The pattern moves off the speaker and into a tag you can wear." },
-  { year: "2009", title: "E-BioCell", body: "Wave Riders carry the pattern on everyday wireless signals." },
-  { year: "2012", title: "Liquilight", body: "Pattern-infused water makes it possible to add Harmonic Energy to almost anything liquid or dyed." },
+  { year: "1990s", title: "Curiosity and research", body: "Molecular measurements become ratios, rhythms and tones." },
+  { year: "1998", title: "The music", body: "Rhythm of the Light is released after an early trial in a hospital emergency department." },
+  { year: "2003", title: "BioCell", body: "The music moves off the speaker and into a wearable tag." },
+  { year: "2009", title: "E-BioCell", body: "Wave Riders carry it on everyday wireless signals." },
+  { year: "2012", title: "Liquilight", body: "Infused water lets it go into almost anything liquid or dyed." },
   { year: "2021", title: "QUID", body: "Paired products that stay linked after they ship." },
 ];
 
@@ -203,7 +203,7 @@ export const industries = [
 
 export const partners = [
   { name: "Life Armor Technologies", body: "Exclusive licensee for North America." },
-  { name: "NanoVibe", body: "A partner brand building Harmonic Energy into its own product line." },
+  { name: "NanoVibe", body: "Builds Harmonic Energy into its own product line." },
 ];
 
 export const naming = [
@@ -218,12 +218,12 @@ export const naming = [
 export const chromatones = {
   // TODO(client): plan names and prices, plus the member login URL.
   features: [
-    { title: "Full albums", body: "Music for driving, training, meditation and background, recorded on real instruments." },
-    { title: "Seven color programs", body: "Programs built around the seven colors of the visible spectrum." },
-    { title: "Programs by activity and mood", body: "Pick by what you’re doing: workouts, focus, winding down, the commute." },
-    { title: "Beam it or pour it", body: "Use your phone’s flashlight to beam a program, or transfer it to a glass of water with the Wave Rider 4i1." },
-    { title: "Video library", body: "Seminars, interviews and how-to videos from the people behind the music." },
-    { title: "A Wave Rider every month", body: "A new rider in the mail each month, so the pattern travels with you when you’re not listening." },
+    { title: "Full albums", body: "For driving, training, meditation or background. Recorded on real instruments." },
+    { title: "Seven color programs", body: "One for each color of the visible spectrum." },
+    { title: "Programs by activity", body: "Workouts, focus, the commute, winding down." },
+    { title: "Beam it or pour it", body: "Beam a program with your phone’s flashlight, or transfer it to water with the Wave Rider 4i1." },
+    { title: "Video library", body: "Talks, interviews and how-tos from the people behind the music." },
+    { title: "A Wave Rider every month", body: "A new one in the mail, so the music goes with you when you’re not listening." },
   ],
   riderUses: ["Phones and tablets", "Laptops", "Game controllers", "Power tools", "Whole-home sets", "Car sets"],
 };
@@ -231,31 +231,31 @@ export const chromatones = {
 export const faqs = [
   {
     q: "What is Harmonic Energy?",
-    a: "It’s the name for a tone we composed in the 1990s from measurements of how molecules bond and pulse, set to the twelve-note musical scale. Everything we make carries that original composition.",
+    a: "It’s the music at the heart of everything we make. We composed it in the 1990s by setting molecular measurements to the twelve-note scale.",
   },
   {
     q: "What does it actually do?",
     a: CORE_CLAIM + " We don’t claim to diagnose, treat or cure anything.",
   },
   {
-    q: "Do I need to believe in it for it to work?",
-    a: "No. Pick a kit, use it the way the card describes for a month, and notice what changes. The Snapshot gives you a baseline to compare against.",
+    q: "How do I know if it’s for me?",
+    a: "Take the Snapshot, use a kit every day for a month, then take the Snapshot again and compare.",
   },
   {
     q: "Does anything need charging or batteries?",
-    a: "No. Cells and Wave Riders are passive tags, and Liquilight is a liquid you add to what you already use.",
+    a: "No. Cells and Wave Riders are passive tags, and Liquilight is a liquid.",
   },
   {
     q: "Can I use it with pets and plants?",
-    a: "We make separate A-series products for animals and P-series for plants, so each gets its own version. If you have a specific health concern, ask your doctor or vet first.",
+    a: "Yes. A-series products are made for animals and P-series for plants. For a specific health concern, ask your vet.",
   },
   {
     q: "Where else can I buy it?",
-    a: "Partner brands build it into their own products, including Life Armor in North America and NanoVibe. Those stores are independent and set their own terms.",
+    a: "Partner brands, including Life Armor and NanoVibe, build it into their own products. Their stores set their own terms.",
   },
   {
     q: "I make products. Can I add it to mine?",
-    a: "Yes. That’s most of what we do. Tell us what you make and we’ll recommend a carrier, send samples, and talk through licensing by territory.",
+    a: "Yes, it’s most of what we do. Tell us what you make, and we’ll suggest a format, send samples and quote a license.",
   },
 ];
 

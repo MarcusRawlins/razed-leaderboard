@@ -14,8 +14,8 @@ export default function Shop() {
     <>
       <PageHero
         eyebrow="Shop"
-        title="Start small. Wear it, add it, carry it."
-        intro="You don’t need to understand the method to try it. Pick the kit that fits how you live, use it daily, and see what changes over a month."
+        title="Start small. Start today."
+        intro="Pick the kit that fits your life. Use it every day for a month and see what changes."
       />
 
       <section className="container-x pb-20">
@@ -56,7 +56,7 @@ export default function Shop() {
       <section className="bg-white/60 py-20">
         <div className="container-x grid gap-12 lg:grid-cols-2">
           <div>
-            <SectionHead eyebrow="Reading the labels" title="Product names, decoded." intro="Every product name tells you who it’s for and how it carries the pattern." />
+            <SectionHead eyebrow="Reading the labels" title="Product names, decoded." intro="The letters tell you who it’s for and what form it takes." />
           </div>
           <dl className="grid grid-cols-[auto_1fr] gap-x-6 gap-y-4 self-center">
             {naming.map((n) => (
@@ -72,8 +72,8 @@ export default function Shop() {
       <section id="partners" className="container-x scroll-mt-20 py-20">
         <SectionHead
           eyebrow="Where else to buy"
-          title="Find it inside partner brands."
-          intro="Some partners build Harmonic Energy into their own products under their own names. Their stores are independent, and purchases there are between you and them."
+          title="Also inside partner brands."
+          intro="Partners build Harmonic Energy into their own products. Their stores set their own terms."
         />
         {/* TODO(client): add each partner's store link and logo. */}
         <div className="mt-10 grid gap-4 sm:grid-cols-2">
@@ -91,7 +91,7 @@ export default function Shop() {
       </section>
 
       <CtaBand
-        title="Want it every day, not just when you remember?"
+        title="Make it a daily habit."
         body="Chromatones adds a library of music and programs, with a new Wave Rider in the mail every month."
         primary={{ href: "/chromatones", label: "Explore Chromatones" }}
       />

@@ -39,25 +39,24 @@ export default function Science() {
     <>
       <PageHero
         eyebrow="The science"
-        title="How a tone becomes a product."
-        intro="Our work starts from one premise: the body’s energy field has a healthy shape, and a sound built to match that shape will tend to help a drifting field settle back toward it. We call that sound Harmonic Energy. Here’s how we made it, and how we get it into things you can use."
+        title="How music becomes a product."
+        intro="We start from one idea: your body’s energy field has a natural balance, and music written to match it can help it settle back. Here’s how we wrote that music and put it into products."
       />
 
       <section className="container-x grid gap-12 py-16 lg:grid-cols-2">
         <div>
           <p className="eyebrow">Step one</p>
-          <h2 className="mt-3 text-3xl sm:text-4xl">Write the pattern down.</h2>
+          <h2 className="mt-3 text-3xl sm:text-4xl">Write the music.</h2>
           <p className="mt-4 text-lg text-stone">
-            We took measurements of how molecules bond and pulse, turned them into ratios, and mapped the ratios onto the twelve-note scale. That
-            gave us short musical phrases, our Sonic Scripts. Chained together and performed on real instruments, they became full compositions:
-            the Sonic Formula. It’s music first. The engineering came after.
+            We measured how molecules bond and pulse, turned those measurements into ratios, and set the ratios to the twelve-note scale. The
+            result was short phrases we call Sonic Scripts. Performed together on real instruments, they make one composition: the Sonic Formula.
           </p>
         </div>
         <div>
           <p className="eyebrow">Step two</p>
-          <h2 className="mt-3 text-3xl sm:text-4xl">Carry it without speakers.</h2>
+          <h2 className="mt-3 text-3xl sm:text-4xl">Take it off the speaker.</h2>
           <p className="mt-4 text-lg text-stone">
-            Music only works while it plays. Starting in 2003, we developed ways to hold the pattern in objects, so it stays with you all day.
+            Music stops when the song ends. From 2003, we found ways to hold it in objects, so it stays with you all day.
           </p>
         </div>
       </section>
@@ -105,7 +104,7 @@ export default function Science() {
         <SectionHead
           eyebrow="Testing"
           title="What others have measured."
-          intro="Over the years, licensees and independent practitioners have run tests on people using our products. The reports are listed as they were written. Read them as observations, not proof."
+          intro="Licensees and practitioners have tested people using our products. Here are their reports, as written. Read them as observations, not proof."
         />
         <div className="mt-10 flex flex-wrap gap-2">
           {studyAreas.map((a) => (
@@ -159,7 +158,7 @@ export default function Science() {
       </section>
 
       <section className="container-x py-20 sm:py-28">
-        <SectionHead eyebrow="Go deeper" title="The method, in four parts." intro="For anyone who wants the long version." />
+        <SectionHead eyebrow="Go deeper" title="The method, in four parts." intro="The long version." />
         <div className="mt-10 divide-y divide-midnight/10 border-y border-midnight/10">
           {deeper.map((d) => (
             <details key={d.title} className="group py-6">
