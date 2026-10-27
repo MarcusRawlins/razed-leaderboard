@@ -73,7 +73,7 @@ export default function About() {
 
       <section className="container-x py-20 sm:py-28">
         <SectionHead eyebrow="Timeline" title="The world tour so far." />
-        <ol className="mt-12 space-y-8 border-l-2 border-brass pl-8">
+        <ol data-stagger className="mt-12 space-y-8 border-l-2 border-brass pl-8">
           {timeline.map((t) => (
             <li key={t.year} className="relative">
               <span className="absolute -left-[2.6rem] top-2 h-4 w-4 rounded-full border-2 border-brass bg-ivory" aria-hidden="true" />

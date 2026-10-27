@@ -29,7 +29,7 @@ export default function Chromatones() {
 
       <section className="container-x py-20 sm:py-28">
         <SectionHead eyebrow="What’s included" title="Everything in the backstage pass." />
-        <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        <div data-stagger className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {chromatones.features.map((f) => (
             <div key={f.title} className="card">
               <h3 className="text-xl">{f.title}</h3>
@@ -48,7 +48,7 @@ export default function Chromatones() {
               intro="Tiny tags that hitch a ride on the Wi-Fi, Bluetooth and phone signals already around you. A new one every month means one more device joins the band."
             />
           </div>
-          <ul className="grid grid-cols-2 gap-3 self-center">
+          <ul data-stagger className="grid grid-cols-2 gap-3 self-center">
             {chromatones.riderUses.map((u) => (
               <li key={u} className="card !py-4 text-center font-medium">
                 {u}

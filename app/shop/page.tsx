@@ -76,7 +76,7 @@ export default function Shop() {
           intro="Partners build Harmonic Energy into their own products. Their stores set their own terms."
         />
         {/* TODO(client): add each partner's store link and logo. */}
-        <div className="mt-10 grid gap-4 sm:grid-cols-2">
+        <div data-stagger className="mt-10 grid gap-4 sm:grid-cols-2">
           {partners.map((p) => (
             <div key={p.name} className="card">
               <h3 className="text-2xl">{p.name}</h3>

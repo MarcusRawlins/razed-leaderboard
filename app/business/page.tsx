@@ -40,7 +40,7 @@ export default function Business() {
 
       <section className="container-x py-20 sm:py-28">
         <SectionHead eyebrow="Why brands add it" title="Why brands put a song in it." />
-        <div className="mt-12 grid gap-6 md:grid-cols-3">
+        <div data-stagger className="mt-12 grid gap-6 md:grid-cols-3">
           {reasons.map((r) => (
             <div key={r.title} className="card">
               <h3 className="text-2xl">{r.title}</h3>
@@ -53,7 +53,7 @@ export default function Business() {
       <section className="bg-white/60 py-20 sm:py-28">
         <div className="container-x">
           <SectionHead eyebrow="What it fits" title="If you make it, we can score it." intro="From a one-person studio to a factory floor." />
-          <div className="mt-12 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+          <div data-stagger className="mt-12 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
             {industries.map((i) => (
               <div key={i.name} className="card !bg-ivory">
                 <h3 className="text-xl">{i.name}</h3>
@@ -66,7 +66,7 @@ export default function Business() {
 
       <section className="container-x py-20 sm:py-28">
         <SectionHead eyebrow="How it works" title="From first call to first pressing." />
-        <ol className="mt-12 grid gap-6 md:grid-cols-2 lg:grid-cols-4">
+        <ol data-stagger className="mt-12 grid gap-6 md:grid-cols-2 lg:grid-cols-4">
           {steps.map((s, i) => (
             <li key={s.title} className="relative card">
               <span className="font-display text-5xl text-brass">{i + 1}</span>
@@ -82,7 +82,7 @@ export default function Business() {
           <div>
             <SectionHead eyebrow="Who’s already doing it" title="Partners around the world." />
             {/* TODO(client): two or three short partner stories with permission to name them. */}
-            <div className="mt-8 space-y-4">
+            <div data-stagger className="mt-8 space-y-4">
               {partners.map((p) => (
                 <div key={p.name} className="card !bg-ivory">
                   <h3 className="text-xl">{p.name}</h3>

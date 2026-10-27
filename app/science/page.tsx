@@ -114,7 +114,7 @@ export default function Science() {
             </span>
           ))}
         </div>
-        <div className="mt-10 grid gap-4 sm:grid-cols-2">
+        <div data-stagger className="mt-10 grid gap-4 sm:grid-cols-2">
           {testers.map((t) => (
             <div key={t.name} className="card">
               <h3 className="text-xl">{t.name}</h3>
@@ -125,7 +125,7 @@ export default function Science() {
         {/* TODO(client): supply the PDFs; each title then links to its report with author, date and sample size. */}
         <details className="card mt-8 !bg-white">
           <summary className="cursor-pointer font-display text-xl">See all {studies.length} reports</summary>
-          <ol className="mt-6 grid gap-x-8 gap-y-2 text-[15px] text-stone sm:grid-cols-2">
+          <ol data-stagger className="mt-6 grid gap-x-8 gap-y-2 text-[15px] text-stone sm:grid-cols-2">
             {studies.map((s, i) => (
               <li key={s} className="flex gap-3">
                 <span className="w-6 shrink-0 text-right text-brass-deep">{i + 1}.</span>
@@ -139,7 +139,7 @@ export default function Science() {
       <section className="bg-white/60 py-20">
         <div className="container-x">
           <SectionHead eyebrow="See it in use" title="Starring people, pets, plants and produce." />
-          <div className="mt-10 grid gap-6 sm:grid-cols-2">
+          <div data-stagger className="mt-10 grid gap-6 sm:grid-cols-2">
             {videos.map((v) => (
               <figure key={v.id}>
                 <div className="aspect-video overflow-hidden rounded-2xl bg-midnight">
@@ -178,7 +178,7 @@ export default function Science() {
       <section className="bg-mist/50 py-20">
         <div className="container-x">
           <SectionHead eyebrow="Timeline" title="Thirty years. One song. Still on tour." />
-          <ol className="mt-12 grid gap-8 sm:grid-cols-2 lg:grid-cols-6">
+          <ol data-stagger className="mt-12 grid gap-8 sm:grid-cols-2 lg:grid-cols-6">
             {timeline.map((t) => (
               <li key={t.year} className="border-t-2 border-brass pt-4">
                 <p className="font-display text-2xl">{t.year}</p>
