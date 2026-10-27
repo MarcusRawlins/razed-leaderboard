@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-ivory font-sans text-[17px] leading-relaxed text-midnight antialiased;
+  }
+  h1,
+  h2,
+  h3 {
+    @apply font-display tracking-tight text-balance;
+  }
+  :focus-visible {
+    @apply outline outline-2 outline-offset-2 outline-brass;
+  }
+  ::selection {
+    @apply bg-brass-light text-midnight;
+  }
+}
+
+@layer components {
+  .container-x {
+    @apply mx-auto w-full max-w-6xl px-4 sm:px-6;
+  }
+  .eyebrow {
+    @apply text-xs font-bold uppercase tracking-[0.18em] text-brass-deep;
+  }
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 rounded-full px-6 py-3 text-[15px] font-bold transition-colors;
+  }
+  .btn-primary {
+    @apply btn bg-midnight text-ivory hover:bg-midnight-700;
+  }
+  .btn-brass {
+    @apply btn bg-brass text-midnight-900 hover:bg-brass-light;
+  }
+  .btn-ghost {
+    @apply btn border border-midnight/25 text-midnight hover:border-midnight hover:bg-midnight/5;
+  }
+  .btn-ghost-light {
+    @apply btn border border-ivory/30 text-ivory hover:border-ivory hover:bg-ivory/10;
+  }
+  .card {
+    @apply rounded-2xl border border-midnight/10 bg-white/60 p-6;
+  }
+  .field {
+    @apply w-full rounded-xl border border-midnight/20 bg-white px-4 py-3 text-base text-midnight placeholder:text-stone/70 focus:border-midnight focus:outline-none;
+  }
+  .prose-copy p + p {
+    @apply mt-4;
+  }
+}
