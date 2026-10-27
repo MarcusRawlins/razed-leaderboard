@@ -15,8 +15,8 @@ export default function Chromatones() {
       <PageHero
         dark
         eyebrow="Chromatones membership"
-        title="Music for every part of your day."
-        intro="A library of music to listen to, plus a new Wave Rider in the mail every month."
+        title="Your day, with a soundtrack."
+        intro="An ever-growing library of music for every mood, plus a fresh Wave Rider in your mailbox every single month. It’s a subscription that plays you back."
       >
         <BuyButton env="NEXT_PUBLIC_CHECKOUT_CHROMATONES" slug="chromatones" label="Become a member" className="btn-brass" />
         {/* TODO(client): set NEXT_PUBLIC_MEMBER_LOGIN_URL to the member library login. */}
@@ -28,7 +28,7 @@ export default function Chromatones() {
       </PageHero>
 
       <section className="container-x py-20 sm:py-28">
-        <SectionHead eyebrow="What’s included" title="What members get." />
+        <SectionHead eyebrow="What’s included" title="Everything in the backstage pass." />
         <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {chromatones.features.map((f) => (
             <div key={f.title} className="card">
@@ -44,8 +44,8 @@ export default function Chromatones() {
           <div>
             <SectionHead
               eyebrow="Wave Riders"
-              title="One for every device."
-              intro="A small tag that rides the Wi-Fi, Bluetooth and phone signals around you. Members get a new one each month for another device."
+              title="Collect them all."
+              intro="Tiny tags that hitch a ride on the Wi-Fi, Bluetooth and phone signals already around you. A new one every month means one more device joins the band."
             />
           </div>
           <ul className="grid grid-cols-2 gap-3 self-center">
@@ -62,7 +62,7 @@ export default function Chromatones() {
         <div className="card !bg-white !p-10 text-center">
           <h2 className="text-3xl">Plans and pricing</h2>
           {/* TODO(client): plan names, monthly/annual prices and what each includes. */}
-          <p className="mx-auto mt-3 max-w-lg text-stone">Membership plans open with the new site. Reserve a spot and we’ll send you founding-member pricing first.</p>
+          <p className="mx-auto mt-3 max-w-lg text-stone">Doors open soon. Grab a spot now and you’ll get founding-member pricing before anyone else.</p>
           <div className="mt-6 flex flex-wrap justify-center gap-3">
             <BuyButton env="NEXT_PUBLIC_CHECKOUT_CHROMATONES" slug="chromatones" label="Become a member" />
             <Link href="/snapshot" className="btn-ghost">

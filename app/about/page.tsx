@@ -11,11 +11,11 @@ export const metadata: Metadata = {
 export default function About() {
   return (
     <>
-      <PageHero eyebrow="Our story" title="It started with a violin." />
+      <PageHero eyebrow="Our story" title="It started with a violin and a weird question." />
 
       <section className="container-x grid gap-12 pb-20 lg:grid-cols-2">
         <div>
-          <SectionHead eyebrow="The idea" title="Everything is energy in motion." />
+          <SectionHead eyebrow="The idea" title="Everything has a rhythm." />
           <p className="mt-6 text-lg text-stone">
             It’s an old idea: everything, down to the atom, is energy in motion, and living things fall into step with the rhythms around them.
             We wanted to make that idea useful.
@@ -26,7 +26,7 @@ export default function About() {
           </p>
         </div>
         <div>
-          <SectionHead eyebrow="The music" title="First, an album." />
+          <SectionHead eyebrow="The music" title="The first product was an album." />
           <p className="mt-6 text-lg text-stone">
             Co-developer Robert Anthony Aviles, a composer on 7-string electric violin, turned the measurements into music worth listening to.{" "}
             <em>Rhythm of the Light</em> came out in {brand.founded}, after an early trial in a hospital emergency department.
@@ -58,7 +58,7 @@ export default function About() {
         <div className="container-x grid gap-12 lg:grid-cols-2">
           <div>
             <p className="eyebrow !text-brass-light">Our mission</p>
-            <h2 className="mt-3 text-3xl leading-tight sm:text-4xl">Help people stay steady in a loud, always-on world.</h2>
+            <h2 className="mt-3 text-3xl leading-tight sm:text-4xl">Turn down the noise. Turn up the music.</h2>
           </div>
           <div className="space-y-4 text-lg text-ivory/80">
             <p>
@@ -72,7 +72,7 @@ export default function About() {
       </section>
 
       <section className="container-x py-20 sm:py-28">
-        <SectionHead eyebrow="Timeline" title="How the music learned to travel." />
+        <SectionHead eyebrow="Timeline" title="The world tour so far." />
         <ol className="mt-12 space-y-8 border-l-2 border-brass pl-8">
           {timeline.map((t) => (
             <li key={t.year} className="relative">
@@ -88,7 +88,7 @@ export default function About() {
       {/* TODO(client): team section with names, roles, photos and where the company is based. */}
 
       <CtaBand
-        title="Hear it for yourself."
+        title="Get on the guest list."
         body="Chromatones members get the full library of albums and programs, with a Wave Rider every month."
         primary={{ href: "/chromatones", label: "Explore Chromatones" }}
         secondary={{ href: "/shop", label: "Shop kits" }}

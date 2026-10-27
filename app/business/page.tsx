@@ -16,9 +16,9 @@ const steps = [
 ];
 
 const reasons = [
-  { title: "A story customers can hear", body: "Music written in 1998 by a violinist. That’s a story, not a spec sheet." },
-  { title: "Fits your existing line", body: "Drops, cells and finishes slot into the production line you already run." },
-  { title: "Your brand stays first", body: "We stay behind your label. You decide what to say about us." },
+  { title: "A story people repeat", body: "“It has a song in it, written by a violinist in 1998.” Try getting that from a spec sheet." },
+  { title: "No retooling", body: "Drops, cells and finishes slot into the production line you already run. Tuesday stays Tuesday." },
+  { title: "You’re the headliner", body: "We’re the session musicians. Your brand gets the spotlight, and you decide how loud to credit us." },
 ];
 
 export default function Business() {
@@ -27,8 +27,8 @@ export default function Business() {
       <PageHero
         dark
         eyebrow="For business"
-        title="Build it into your products."
-        intro="Brands have licensed Harmonic Energy for more than 20 years, in dyes, labels, shampoo, supplements, jewelry and water. Your label stays on the front."
+        title="Your product could have a soundtrack."
+        intro="T-shirts. Shampoo. Jewelry. Supplements. Water. For 20+ years, brands have built our song into what they already make. Your label on the front, our music on the inside, and a story your competitors can’t copy."
       >
         <Link href="/contact?topic=licensing" className="btn-brass">
           Book a licensing call
@@ -39,7 +39,7 @@ export default function Business() {
       </PageHero>
 
       <section className="container-x py-20 sm:py-28">
-        <SectionHead eyebrow="Why brands add it" title="Give customers one more reason." />
+        <SectionHead eyebrow="Why brands add it" title="Why brands put a song in it." />
         <div className="mt-12 grid gap-6 md:grid-cols-3">
           {reasons.map((r) => (
             <div key={r.title} className="card">
@@ -52,7 +52,7 @@ export default function Business() {
 
       <section className="bg-white/60 py-20 sm:py-28">
         <div className="container-x">
-          <SectionHead eyebrow="What it fits" title="Where it fits." intro="From one-person studios to factories." />
+          <SectionHead eyebrow="What it fits" title="If you make it, we can score it." intro="From a one-person studio to a factory floor." />
           <div className="mt-12 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
             {industries.map((i) => (
               <div key={i.name} className="card !bg-ivory">
@@ -65,7 +65,7 @@ export default function Business() {
       </section>
 
       <section className="container-x py-20 sm:py-28">
-        <SectionHead eyebrow="How it works" title="From first call to first run." />
+        <SectionHead eyebrow="How it works" title="From first call to first pressing." />
         <ol className="mt-12 grid gap-6 md:grid-cols-2 lg:grid-cols-4">
           {steps.map((s, i) => (
             <li key={s.title} className="relative card">
@@ -92,7 +92,7 @@ export default function Business() {
             </div>
           </div>
           <div>
-            <SectionHead eyebrow="Pricing" title="Less than you’d expect." />
+            <SectionHead eyebrow="Pricing" title="Cheaper than a jingle." />
             {/* TODO(client): replace with a real starting range if you’re happy to publish one. */}
             <p className="mt-6 text-lg text-stone">
               Pricing depends on product, volume and territory, and it works for small studios as well as factories. You’ll have a number after
@@ -113,8 +113,8 @@ export default function Business() {
       </section>
 
       <CtaBand
-        title="Start with a sample."
-        body="The Tech Sample Set holds all 22 carrier formats, so your team can test them on your own materials before you commit."
+        title="Start with a sound check."
+        body="The Tech Sample Set puts all 22 formats in your team’s hands, so you can test on your own materials before you sign anything."
         primary={{ href: "/contact?topic=licensing", label: "Book a licensing call" }}
         secondary={{ href: "/shop/tech-sample-set", label: "See the sample set" }}
       />

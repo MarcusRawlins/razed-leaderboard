@@ -30,7 +30,7 @@ export function Header() {
         </nav>
         <div className="hidden items-center gap-3 lg:flex">
           <Link href="/snapshot" className="btn-primary !py-2.5">
-            Take the Snapshot
+            Find your frequency
           </Link>
         </div>
         <button
@@ -55,7 +55,7 @@ export function Header() {
               </Link>
             ))}
             <Link href="/snapshot" className="btn-primary mt-4">
-              Take the Snapshot
+              Find your frequency
             </Link>
           </div>
         </nav>

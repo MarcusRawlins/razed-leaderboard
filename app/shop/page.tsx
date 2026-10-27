@@ -14,8 +14,8 @@ export default function Shop() {
     <>
       <PageHero
         eyebrow="Shop"
-        title="Start small. Start today."
-        intro="Pick the kit that fits your life. Use it every day for a month and see what changes."
+        title="Press play on your day."
+        intro="Three kits. Zero batteries. Pick one, use it every day for 30 days, and see what changes."
       />
 
       <section className="container-x pb-20">
@@ -56,7 +56,7 @@ export default function Shop() {
       <section className="bg-white/60 py-20">
         <div className="container-x grid gap-12 lg:grid-cols-2">
           <div>
-            <SectionHead eyebrow="Reading the labels" title="Product names, decoded." intro="The letters tell you who it’s for and what form it takes." />
+            <SectionHead eyebrow="Reading the labels" title="Our product names, decoded." intro="They look like a chemistry exam. They’re actually a cheat sheet: who it’s for and how it plays." />
           </div>
           <dl className="grid grid-cols-[auto_1fr] gap-x-6 gap-y-4 self-center">
             {naming.map((n) => (
@@ -72,7 +72,7 @@ export default function Shop() {
       <section id="partners" className="container-x scroll-mt-20 py-20">
         <SectionHead
           eyebrow="Where else to buy"
-          title="Also inside partner brands."
+          title="Already in stores near you, under other names."
           intro="Partners build Harmonic Energy into their own products. Their stores set their own terms."
         />
         {/* TODO(client): add each partner's store link and logo. */}
@@ -91,9 +91,9 @@ export default function Shop() {
       </section>
 
       <CtaBand
-        title="Make it a daily habit."
-        body="Chromatones adds a library of music and programs, with a new Wave Rider in the mail every month."
-        primary={{ href: "/chromatones", label: "Explore Chromatones" }}
+        title="Want the song on repeat?"
+        body="Chromatones gives you a daily soundtrack and new gear in your mailbox every month."
+        primary={{ href: "/chromatones", label: "Join Chromatones" }}
       />
     </>
   );

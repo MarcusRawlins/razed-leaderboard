@@ -14,7 +14,7 @@ export default function Contact() {
     <section className="container-x grid gap-12 py-16 sm:py-24 lg:grid-cols-[1fr_1.4fr]">
       <div>
         <p className="eyebrow">Contact</p>
-        <h1 className="mt-4 text-4xl sm:text-6xl">Talk to a person.</h1>
+        <h1 className="mt-4 text-4xl sm:text-6xl">Talk to a human.</h1>
         <p className="mt-6 text-lg text-stone">
           Whether you have a question about a kit, want to reserve one, or make products and want to add Harmonic Energy, this goes straight to
           our team. {responseTime}

@@ -44,7 +44,7 @@ export function Footer() {
           <Logo light />
           <p className="mt-4 max-w-sm font-display text-xl italic text-ivory/85">{brand.line}</p>
           <div className="mt-8 max-w-sm">
-            <p className="mb-3 text-sm font-bold">New music, rituals and offers. Twice a month.</p>
+            <p className="mb-3 text-sm font-bold">Liner notes: new music, rituals and drops. Twice a month, never spammy.</p>
             <NewsletterForm />
           </div>
         </div>

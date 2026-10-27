@@ -6,7 +6,7 @@ export function PageHero({ eyebrow, title, intro, children, dark = false }: { ey
   return (
     <section className={`relative overflow-hidden ${dark ? "bg-midnight text-ivory" : ""}`}>
       <WaveArt light={dark} className="pointer-events-none absolute -right-24 -top-16 h-[28rem] w-[28rem] opacity-30 sm:-right-10 sm:opacity-70" />
-      <div className="container-x relative py-16 sm:py-24">
+      <div className="container-x hero-in relative py-16 sm:py-24">
         <p className={`eyebrow ${dark ? "!text-brass-light" : ""}`}>{eyebrow}</p>
         <h1 className="mt-4 max-w-3xl text-4xl leading-[1.08] sm:text-6xl">{title}</h1>
         {intro && <p className={`mt-6 max-w-2xl text-lg sm:text-xl ${dark ? "text-ivory/80" : "text-stone"}`}>{intro}</p>}

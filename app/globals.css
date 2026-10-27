@@ -54,3 +54,104 @@
     @apply mt-4;
   }
 }
+
+/* Motion. Everything is visible without it; it only adds movement. */
+@media (prefers-reduced-motion: no-preference) {
+  .wave-flow {
+    animation: wave-slide 7s linear infinite;
+  }
+  .wave-flow-slow {
+    animation: wave-slide 13s linear infinite reverse;
+  }
+  .wave-ring {
+    transform-box: fill-box;
+    transform-origin: center;
+    animation: ring-breathe 6s ease-in-out infinite;
+  }
+  .wave-dot {
+    transform-box: fill-box;
+    transform-origin: center;
+    animation: dot-pulse 2.4s ease-in-out infinite;
+  }
+  .rule-flow {
+    animation: rule-slide 3s linear infinite;
+  }
+  .marquee {
+    animation: marquee 40s linear infinite;
+  }
+  .marquee:hover {
+    animation-play-state: paused;
+  }
+  .eq-bar {
+    animation: eq 0.9s ease-in-out infinite alternate;
+  }
+  .logo-wave {
+    transition: transform 0.4s ease;
+  }
+  a:hover .logo-wave {
+    transform: translateY(-1.5px);
+  }
+  .card {
+    transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+  }
+  .card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 14px 30px -18px rgba(22, 21, 63, 0.35);
+  }
+  .btn {
+    transition: transform 0.2s ease, background-color 0.2s ease, border-color 0.2s ease;
+  }
+  .btn:hover {
+    transform: translateY(-1px);
+  }
+  /* Scroll reveal: only armed once JS has run (html.reveal-on), so content never hides without it. */
+  .reveal-on [data-reveal] {
+    opacity: 0;
+    transform: translateY(18px);
+    transition: opacity 0.7s ease, transform 0.7s ease;
+  }
+  .reveal-on [data-reveal].is-in {
+    opacity: 1;
+    transform: none;
+  }
+  .hero-in > * {
+    animation: rise 0.9s cubic-bezier(0.2, 0.7, 0.2, 1) both;
+  }
+  .hero-in > *:nth-child(2) { animation-delay: 0.08s; }
+  .hero-in > *:nth-child(3) { animation-delay: 0.16s; }
+  .hero-in > *:nth-child(4) { animation-delay: 0.24s; }
+  .hero-in > *:nth-child(5) { animation-delay: 0.32s; }
+}
+
+@keyframes wave-slide {
+  from { transform: translateX(0); }
+  to { transform: translateX(-240px); }
+}
+@keyframes rule-slide {
+  from { transform: translateX(0); }
+  to { transform: translateX(60px); }
+}
+@keyframes ring-breathe {
+  0%, 100% { transform: scale(1); opacity: 1; }
+  50% { transform: scale(1.05); opacity: 0.45; }
+}
+@keyframes dot-pulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.6); }
+}
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .marquee { width: auto; flex-wrap: wrap; justify-content: center; gap: 0.75rem 3rem; padding: 0 1rem; }
+  .marquee > [aria-hidden="true"] { display: none; }
+}
+@keyframes eq {
+  from { height: 25%; }
+  to { height: 100%; }
+}
+@keyframes rise {
+  from { opacity: 0; transform: translateY(16px); }
+  to { opacity: 1; transform: none; }
+}

@@ -2,7 +2,7 @@
 // Claims are kept to the brand's one defensible claim; see docs/brand/brand-kit.md.
 
 export const CORE_CLAIM =
-  "Products carrying Harmonic Energy help your body’s natural energy field stay balanced while you carry them.";
+  "Products carrying Harmonic Energy help your body’s natural energy field stay balanced while you use them.";
 
 export const DISCLAIMER =
   "Our products are not a substitute for the care of a physician. They are not intended to diagnose, treat, cure or prevent any disease. Biofield balancing is not recognized by the FDA, and these statements have not been evaluated by it. If you have a medical condition, talk to your doctor and never stop a prescribed medication. Individual experiences vary, and we make no promise beyond helping the biofield hold its balance.";
@@ -29,10 +29,10 @@ export const kits: Kit[] = [
   {
     slug: "small-personal-kit",
     name: "Small Personal Kit",
-    short: "A pendant, drops and a phone tag. The easiest way to start.",
-    badge: "Best first step",
+    short: "A pendant, a bottle of drops and a phone sticker. Your first track.",
+    badge: "The debut single",
     description:
-      "One thing to wear, one to add, one for your phone. Enough to try all three for a month.",
+      "One to wear, one to pour, one to stick on your phone. Everything you need for a 30-day test drive.",
     contents: [
       "B-Cell Pendant",
       "B-Liquilight-C concentrate (90-drop bottle)",
@@ -43,17 +43,17 @@ export const kits: Kit[] = [
       ...liquilightUse,
       "Attach the Wave Rider to the back of your phone or case.",
     ],
-    forWhom: "First-timers and gifts.",
+    forWhom: "First-timers, the curious, and anyone who’s hard to buy for.",
     price: null,
     checkoutEnv: "NEXT_PUBLIC_CHECKOUT_SMALL_KIT",
   },
   {
     slug: "full-personal-kit",
     name: "Full Personal Kit",
-    short: "The whole-home set, with sprays for food, plants and flowers.",
-    badge: "Most complete",
+    short: "The whole house, scored. Sprays for your food, your plants and your flowers too.",
+    badge: "The full album",
     description:
-      "Everything in the Small Kit, plus raw cells for your own jewelry, a BioLux pendant and three sprays. Add three Small Kits to share.",
+      "Everything in the Small Kit, plus raw cells to stick on your own jewelry, a BioLux pendant, and three sprays for the kitchen, the houseplants and the vase. Add three Small Kits to share with the people you like most.",
     contents: [
       "Two raw B-Cells, to tape to a pendant, bracelet or watch band",
       "Four-in-One Phone Wave Rider",
@@ -71,17 +71,17 @@ export const kits: Kit[] = [
       "Plant spray: one or two pumps per plant, a few times a week.",
       "Flower spray: one or two pumps a day.",
     ],
-    forWhom: "Households and families.",
+    forWhom: "Households, families and plant parents.",
     price: null,
     checkoutEnv: "NEXT_PUBLIC_CHECKOUT_FULL_KIT",
   },
   {
     slug: "tech-sample-set",
     name: "Tech Sample Set",
-    short: "All 22 formats in one box, for product teams.",
-    badge: "For brands",
+    short: "All 22 formats in one box. Your R&D team’s new favorite toy.",
+    badge: "The box set",
     description:
-      "Every format we make, so your team can test them on your own materials: cells, signal tags, liquids, oils and finishes.",
+      "Every format we make, in one box, so your team can test them on your own materials: cells, signal tags, liquids, oils and finishes.",
     contents: [
       "Cells: B-Cell, A-Cell, P-Cell, Pr-Cell",
       "Signal cells: E B-Cell, E A-Cell, E P-Cell, E Pr-Cell",
@@ -104,35 +104,35 @@ export const carriers = [
     name: "Sound",
     year: "1998",
     product: "Harmonic Energy music",
-    body: "The original music, recorded on real instruments. The source of everything else.",
+    body: "Where it all began. The original track, recorded on real instruments.",
     where: "Albums and the Chromatones library",
   },
   {
     name: "Cells",
     year: "2003",
     product: "BioCell",
-    body: "A tag the size of confetti, set into jewelry, labels and clothing. No battery.",
+    body: "A tag the size of confetti, hidden in jewelry, labels and clothes. No battery. No fuss.",
     where: "Pendants, bracelets, labels, clothing",
   },
   {
     name: "Signal",
     year: "2009",
     product: "E-BioCell / Wave Rider",
-    body: "A tag that rides your phone, Wi-Fi and Bluetooth signals to fill a room.",
+    body: "Hitches a ride on your phone, Wi-Fi and Bluetooth signals to fill the whole room.",
     where: "Phones, chargers, home and car sets",
   },
   {
     name: "Light & water",
     year: "2012",
     product: "Liquilight",
-    body: "Water infused with the music, added to dyes, cosmetics, food and sprays.",
+    body: "Water infused with the song. Pour it into dyes, lotions, food, anything.",
     where: "Dyes, inks, cosmetics, food, sprays",
   },
   {
     name: "Pairs",
     year: "2021",
     product: "QUID",
-    body: "Products made in matched pairs that stay linked after they ship.",
+    body: "Made in matched pairs that stay linked after they ship. Like a duet.",
     where: "Sets and multi-item programs",
   },
 ];
@@ -218,12 +218,12 @@ export const naming = [
 export const chromatones = {
   // TODO(client): plan names and prices, plus the member login URL.
   features: [
-    { title: "Full albums", body: "For driving, training, meditation or background. Recorded on real instruments." },
-    { title: "Seven color programs", body: "One for each color of the visible spectrum." },
-    { title: "Programs by activity", body: "Workouts, focus, the commute, winding down." },
-    { title: "Beam it or pour it", body: "Beam a program with your phone’s flashlight, or transfer it to water with the Wave Rider 4i1." },
-    { title: "Video library", body: "Talks, interviews and how-tos from the people behind the music." },
-    { title: "A Wave Rider every month", body: "A new one in the mail, so the music goes with you when you’re not listening." },
+    { title: "Full albums", body: "For the gym, the drive, the meditation cushion and the background. Played on real instruments." },
+    { title: "Seven color programs", body: "One for every color of the rainbow. Pick your mood." },
+    { title: "Programs for every move", body: "Workouts, deep focus, the commute, lights-out." },
+    { title: "Beam it or pour it", body: "Shine a program through your phone’s flashlight, or pour it into a glass of water with the Wave Rider 4i1. Yes, really." },
+    { title: "Backstage pass", body: "Talks, interviews and how-tos from the people who made the music." },
+    { title: "New gear every month", body: "A fresh Wave Rider in your mailbox, so the music keeps playing when your headphones are off." },
   ],
   riderUses: ["Phones and tablets", "Laptops", "Game controllers", "Power tools", "Whole-home sets", "Car sets"],
 };
@@ -231,23 +231,23 @@ export const chromatones = {
 export const faqs = [
   {
     q: "What is Harmonic Energy?",
-    a: "It’s the music at the heart of everything we make. We composed it in the 1990s by setting molecular measurements to the twelve-note scale.",
+    a: "It’s our song. We wrote it in the 1990s by turning molecular measurements into notes on the twelve-tone scale. Everything we make carries it.",
   },
   {
     q: "What does it actually do?",
     a: CORE_CLAIM + " We don’t claim to diagnose, treat or cure anything.",
   },
   {
-    q: "How do I know if it’s for me?",
-    a: "Take the Snapshot, use a kit every day for a month, then take the Snapshot again and compare.",
+    q: "How do I know if it’s working for me?",
+    a: "Run the experiment. Take the Snapshot, use a kit every day for 30 days, then take it again and compare. Your results are the only review that counts.",
   },
   {
-    q: "Does anything need charging or batteries?",
-    a: "No. Cells and Wave Riders are passive tags, and Liquilight is a liquid.",
+    q: "Do I need to charge anything?",
+    a: "Nope. No batteries, no apps, no Bluetooth pairing. Cells and Wave Riders are passive tags, and Liquilight is a liquid.",
   },
   {
-    q: "Can I use it with pets and plants?",
-    a: "Yes. A-series products are made for animals and P-series for plants. For a specific health concern, ask your vet.",
+    q: "Can my dog get in on this? My ficus?",
+    a: "Absolutely. The A-series is made for animals and the P-series for plants. For a specific health concern, ask your vet.",
   },
   {
     q: "Where else can I buy it?",
@@ -255,7 +255,7 @@ export const faqs = [
   },
   {
     q: "I make products. Can I add it to mine?",
-    a: "Yes, it’s most of what we do. Tell us what you make, and we’ll suggest a format, send samples and quote a license.",
+    a: "That’s our favorite question. Tell us what you make, and we’ll pick a format, send samples and quote a license. Most of our work happens inside other people’s brands.",
   },
 ];
 

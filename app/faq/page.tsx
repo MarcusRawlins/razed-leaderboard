@@ -16,7 +16,7 @@ export default function Faq() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
-      <PageHero eyebrow="FAQ" title="Questions, answered plainly." />
+      <PageHero eyebrow="FAQ" title="Good questions. Straight answers." />
       <section className="container-x pb-12">
         <div className="max-w-3xl divide-y divide-midnight/10 border-y border-midnight/10">
           {faqs.map((f) => (
@@ -36,8 +36,8 @@ export default function Faq() {
         </div>
       </section>
       <CtaBand
-        title="Still wondering?"
-        body="Send us your question. A real person replies within two business days."
+        title="Still curious?"
+        body="Ask us anything. A real human writes back within two business days."
         primary={{ href: "/contact", label: "Ask us" }}
         secondary={{ href: "/snapshot", label: "Take the Snapshot" }}
       />

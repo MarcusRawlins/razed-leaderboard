@@ -34,7 +34,7 @@ const formData = (form: HTMLFormElement) => Object.fromEntries(new FormData(form
 
 export function NewsletterForm({ source = "footer" }: { source?: string }) {
   const { status, send } = useSubmit();
-  if (status === "sent") return <p className="text-sm text-brass-light">You’re on the list. The first note arrives soon.</p>;
+  if (status === "sent") return <p className="text-sm text-brass-light">You’re on the list. First track lands soon.</p>;
   return (
     <form
       className="flex flex-col gap-2 sm:flex-row"
@@ -73,7 +73,7 @@ function ContactFormInner({ initialTopic = "customer", kit }: { initialTopic?: s
   if (status === "sent") {
     return (
       <div className="card">
-        <h2 className="text-2xl">Thank you. We’ve got it.</h2>
+        <h2 className="text-2xl">Got it. Loud and clear.</h2>
         <p className="mt-2 text-stone">A real person will reply within two business days.</p>
       </div>
     );

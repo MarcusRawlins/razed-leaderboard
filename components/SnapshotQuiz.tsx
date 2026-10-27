@@ -10,20 +10,20 @@ const max = snapshotQuestions.length * 3;
 const readings = [
   {
     min: 0.75,
-    title: "Mostly in tune",
-    body: "Your days sound fairly steady. A pendant and a few drops of Liquilight can help you keep it that way when life gets loud.",
+    title: "Perfectly in tune",
+    body: "Look at you, hitting every note. A pendant and a few drops of Liquilight will keep the song going when life turns the volume up.",
     kit: { href: "/shop/small-personal-kit", label: "See the Small Personal Kit" },
   },
   {
     min: 0.45,
-    title: "A little off-key",
-    body: "Some parts of your day are steady and some drift. Most people here start with the Small Personal Kit and retake the Snapshot in a month.",
+    title: "Slightly off-key",
+    body: "Some of your day is in rhythm and some of it’s freestyle jazz. Most people here start with the Small Kit and retake the Snapshot in 30 days.",
     kit: { href: "/shop/small-personal-kit", label: "See the Small Personal Kit" },
   },
   {
     min: 0,
-    title: "Ready for a retune",
-    body: "Your answers suggest your days rarely settle. The Full Personal Kit brings Harmonic Energy into more of your home, and Chromatones adds daily listening.",
+    title: "Time for a tune-up",
+    body: "Your days are running loud. The Full Kit puts our song in every room, and Chromatones gives you a daily soundtrack to settle into.",
     kit: { href: "/shop/full-personal-kit", label: "See the Full Personal Kit" },
   },
 ];
@@ -60,7 +60,7 @@ export function SnapshotQuiz() {
 
         <div className="mt-10 border-t border-midnight/10 pt-8">
           {emailState === "sent" ? (
-            <p className="text-lg">Sent. We’ll remind you in 30 days to retake it and compare.</p>
+            <p className="text-lg">Sent. See you in 30 days for the rematch.</p>
           ) : (
             <form
               onSubmit={async (e) => {
@@ -76,7 +76,7 @@ export function SnapshotQuiz() {
               }}
             >
               <label htmlFor="snap-email" className="block font-display text-xl">
-                Email me my Snapshot and a 30-day reminder to compare
+                Send me my results, and nudge me in 30 days for a rematch
               </label>
               <div className="mt-3 flex flex-col gap-2 sm:flex-row">
                 <input id="snap-email" name="email" type="email" required placeholder="you@example.com" className="field" />

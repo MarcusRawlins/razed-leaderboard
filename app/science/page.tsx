@@ -39,14 +39,14 @@ export default function Science() {
     <>
       <PageHero
         eyebrow="The science"
-        title="How music becomes a product."
-        intro="We start from one idea: your body’s energy field has a natural balance, and music written to match it can help it settle back. Here’s how we wrote that music and put it into products."
+        title="How we turn a song into stuff."
+        intro="Your body has a rhythm. We wrote it a song. Then we spent 25 years figuring out how to fit that song into a pendant, a drop of water and a phone sticker. Here are the liner notes."
       />
 
       <section className="container-x grid gap-12 py-16 lg:grid-cols-2">
         <div>
           <p className="eyebrow">Step one</p>
-          <h2 className="mt-3 text-3xl sm:text-4xl">Write the music.</h2>
+          <h2 className="mt-3 text-3xl sm:text-4xl">Write the song.</h2>
           <p className="mt-4 text-lg text-stone">
             We measured how molecules bond and pulse, turned those measurements into ratios, and set the ratios to the twelve-note scale. The
             result was short phrases we call Sonic Scripts. Performed together on real instruments, they make one composition: the Sonic Formula.
@@ -54,9 +54,10 @@ export default function Science() {
         </div>
         <div>
           <p className="eyebrow">Step two</p>
-          <h2 className="mt-3 text-3xl sm:text-4xl">Take it off the speaker.</h2>
+          <h2 className="mt-3 text-3xl sm:text-4xl">Unplug the speakers.</h2>
           <p className="mt-4 text-lg text-stone">
-            Music stops when the song ends. From 2003, we found ways to hold it in objects, so it stays with you all day.
+            Songs end. Ours doesn’t have to. From 2003 on, we found ways to lock it inside objects, so it plays all day without a single
+            speaker.
           </p>
         </div>
       </section>
@@ -103,8 +104,8 @@ export default function Science() {
       <section id="testing" className="container-x scroll-mt-20 py-20 sm:py-28">
         <SectionHead
           eyebrow="Testing"
-          title="What others have measured."
-          intro="Licensees and practitioners have tested people using our products. Here are their reports, as written. Read them as observations, not proof."
+          title="Don’t take our word for it."
+          intro="Licensees and practitioners have put our products through thermal cameras, brain mapping and athletic testing. Here are their reports, exactly as written. Read them, then run your own experiment."
         />
         <div className="mt-10 flex flex-wrap gap-2">
           {studyAreas.map((a) => (
@@ -137,7 +138,7 @@ export default function Science() {
 
       <section className="bg-white/60 py-20">
         <div className="container-x">
-          <SectionHead eyebrow="See it in use" title="People, pets, plants and preservation." />
+          <SectionHead eyebrow="See it in use" title="Starring people, pets, plants and produce." />
           <div className="mt-10 grid gap-6 sm:grid-cols-2">
             {videos.map((v) => (
               <figure key={v.id}>
@@ -158,7 +159,7 @@ export default function Science() {
       </section>
 
       <section className="container-x py-20 sm:py-28">
-        <SectionHead eyebrow="Go deeper" title="The method, in four parts." intro="The long version." />
+        <SectionHead eyebrow="Go deeper" title="The deep cut." intro="For the nerds. We love you." />
         <div className="mt-10 divide-y divide-midnight/10 border-y border-midnight/10">
           {deeper.map((d) => (
             <details key={d.title} className="group py-6">
@@ -176,7 +177,7 @@ export default function Science() {
 
       <section className="bg-mist/50 py-20">
         <div className="container-x">
-          <SectionHead eyebrow="Timeline" title="Thirty years, one composition." />
+          <SectionHead eyebrow="Timeline" title="Thirty years. One song. Still on tour." />
           <ol className="mt-12 grid gap-8 sm:grid-cols-2 lg:grid-cols-6">
             {timeline.map((t) => (
               <li key={t.year} className="border-t-2 border-brass pt-4">
@@ -194,8 +195,8 @@ export default function Science() {
       </section>
 
       <CtaBand
-        title="See it for yourself."
-        body="Start with a kit, give it a month, and compare your Snapshot before and after."
+        title="Hear it for yourself."
+        body="Grab a kit, give it 30 days, and compare your Snapshot before and after. Science, but make it personal."
         primary={{ href: "/shop", label: "Shop starter kits" }}
         secondary={{ href: "/snapshot", label: "Take the Snapshot" }}
       />

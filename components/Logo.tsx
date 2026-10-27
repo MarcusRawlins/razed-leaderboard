@@ -5,6 +5,7 @@ export function Mark({ className = "h-8 w-8", light = false }: { className?: str
     <svg viewBox="0 0 48 48" className={className} aria-hidden="true">
       <circle cx="24" cy="24" r="18" fill="none" stroke={light ? "#F7F2EA" : "#16153F"} strokeWidth="2.5" />
       <path
+        className="logo-wave"
         d="M4 24 C9 13 14 13 19 24 S29 35 34 24 S39 13 44 24"
         fill="none"
         stroke="#B3863A"

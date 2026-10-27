@@ -11,12 +11,12 @@ export default function Snapshot() {
     <section className="container-x grid gap-12 py-16 sm:py-24 lg:grid-cols-[1fr_1.4fr]">
       <div>
         <p className="eyebrow">Snapshot</p>
-        <h1 className="mt-4 text-4xl sm:text-6xl">Six questions. Two minutes.</h1>
+        <h1 className="mt-4 text-4xl sm:text-6xl">What’s your frequency?</h1>
         <p className="mt-6 text-lg text-stone">
-          Most of us only notice our balance when it’s gone, like sleep: you don’t think about it until a bad night. Answer honestly about how
-          your days feel right now. You’ll get a simple reading of where your baseline sits and a suggested place to start.
+          Balance is like sleep: you only notice it when it’s gone. Six honest questions, two minutes, and you’ll know whether your day is
+          in tune or overdue for a tune-up.
         </p>
-        <p className="mt-4 text-lg text-stone">Retake it in a month to see what’s changed.</p>
+        <p className="mt-4 text-lg text-stone">Then come back in 30 days for the rematch.</p>
       </div>
       <SnapshotQuiz />
     </section>
