@@ -48,6 +48,10 @@ Everything is optional. With nothing set, the site still works: buy buttons beco
 
 `scripts/build-demo.sh` builds a static copy with a "preview" banner, no checkout and forms that only pretend to send. The `Demo site` workflow runs it on every push and publishes it to the `gh-pages` branch, so it appears at `https://<owner>.github.io/<repo>/`. Pages has to be switched on once in the repo's Settings → Pages (source: `gh-pages` branch), and on a free GitHub plan the repo must be public.
 
+## Review copy (claude.ai artifact)
+
+`python3 scripts/build-artifact.py > docs/preview/site-preview.html` (after `scripts/build-demo.sh`) bundles the whole site into one page with tab-style views, for commenting on as a claude.ai artifact.
+
 ## Deploy
 
 It deploys to Vercel with zero configuration, or to Render as a Node web service (`npm install && npm run build`, start `npm start`).

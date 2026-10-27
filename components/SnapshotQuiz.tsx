@@ -95,7 +95,7 @@ export function SnapshotQuiz() {
 
   const q = snapshotQuestions[step];
   return (
-    <div className="card !bg-white">
+    <div id="snapshot-quiz" className="card !bg-white">
       <div className="flex items-center justify-between text-sm text-stone">
         <span>
           Question {step + 1} of {snapshotQuestions.length}
