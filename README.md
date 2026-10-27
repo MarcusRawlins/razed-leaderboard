@@ -1,68 +1,72 @@
-# REESE-AI KNOWLEDGE BASE: R3-Studios - Projects - Razed-Leaderboard
-# DATE CREATED: 2026-02-10 | LAST UPDATED: 2026-02-10
-# PURPOSE: R3-Studios - Projects - Razed-Leaderboard content for strategic guidance
-# KEY TOPICS: marketing, client psychology, brand consistency
-# USAGE RULES: Always reference gold examples when discussing R3-Studios - Projects - Razed-Leaderboard
-# EXAMPLES: gold/r3-studios/projects/razed-leaderboard/README.md
+# Sonaura website
 
-# Razed Leaderboard
+The new site for Sonaura (working name), built with Next.js 15, React 19 and Tailwind CSS.
 
-A clean, professional leaderboard website for tracking and displaying user rankings.
+- **Brand kit:** [`docs/brand/brand-kit.md`](docs/brand/brand-kit.md): name, promise ("Tune your day."), voice, logo, colors, type and claims rules.
+- **Source material:** [`docs/source/site-inventory.md`](docs/source/site-inventory.md) is the content inventory of the previous site. It is reference only and is not published.
+- **Brand name and contact details** live in `lib/brand.ts`. Shared copy (products, timeline, studies, FAQ, disclaimer) lives in `lib/content.ts`.
 
-## Features
-
-- 🏆 **User Rankings** - Display top players with scores, wins/losses, and streaks
-- 🌙 **Dark Mode** - Beautiful dark theme by default
-- 📱 **Responsive** - Works on all device sizes
-- 🔍 **Search** - Filter players by username
-- ↕️ **Sortable** - Click column headers to sort
-- ⚡ **Fast** - Built with Next.js for optimal performance
-
-## Tech Stack
-
-- **Framework**: Next.js 14
-- **Styling**: Tailwind CSS
-- **Icons**: Lucide React
-- **Font**: Inter (via Google Fonts)
-
-## Getting Started
+## Run it
 
 ```bash
-# Install dependencies
 npm install
-
-# Run development server
-npm run dev
-
-# Build for production
-npm run build
-
-# Start production server
-npm start
+npm run dev        # http://localhost:3000
+npm run build      # production build
+npm run typecheck
 ```
 
-## Deployment
+## Pages
 
-This project is configured for deployment on Render. Simply connect your repository and deploy.
+| Page | Path | Job |
+| --- | --- | --- |
+| Home | `/` | One promise, two audiences, routes to Snapshot, kits and licensing |
+| Shop | `/shop`, `/shop/[kit]` | Three kits, naming legend, partner stores |
+| Chromatones | `/chromatones` | Membership: music library plus a monthly Wave Rider |
+| The science | `/science` | Method, carriers, the one claim, testing library, videos, timeline |
+| For business | `/business` | Licensing pitch, industries, process, partners, distribution |
+| Our story | `/about` | Origin, Robert Anthony Aviles, mission, timeline |
+| Snapshot | `/snapshot` | Six-question quiz with email capture (main consumer lead magnet) |
+| FAQ, Contact | `/faq`, `/contact` | FAQ with schema; one form for customers, reservations and licensing |
+| Legal | `/privacy`, `/terms`, `/shipping-returns` | Drafts with [bracketed] gaps for counsel |
 
-## Customization
+All 16 URLs from the old site are 301-redirected to their new homes (`next.config.mjs`).
 
-### Updating Leaderboard Data
+## Environment variables
 
-Edit `lib/data.ts` to modify the leaderboard entries. Each player has:
+Everything is optional. With nothing set, the site still works: buy buttons become "Reserve yours" forms, and form submissions are logged on the server.
 
-- `rank` - Position on the leaderboard
-- `username` - Display name
-- `score` - Total points
-- `wins` / `losses` - Match statistics
-- `winRate` - Win percentage
-- `streak` - Current winning streak
-- `lastActive` - Time since last activity
+| Variable | What it does |
+| --- | --- |
+| `NEXT_PUBLIC_SITE_URL` | Canonical domain, used in the sitemap and metadata |
+| `NEXT_PUBLIC_CONTACT_EMAIL` / `_PHONE` / `_ADDRESS` | Shown in the footer and on Contact once set |
+| `NEXT_PUBLIC_CHECKOUT_SMALL_KIT` / `_FULL_KIT` / `_TECH_SET` / `_CHROMATONES` | Stripe Payment Links (or any hosted checkout URL) |
+| `NEXT_PUBLIC_MEMBER_LOGIN_URL` | Chromatones member library login |
+| `NEXT_PUBLIC_TIBET_VIDEO_ID` | Vimeo ID of the "Tibet" performance on Our story |
+| `LEAD_WEBHOOK_URL` | Where every form posts (CRM, email tool, Zapier or Make) |
 
-### Theming
+## Demo site (GitHub Pages)
 
-Colors can be customized in `app/globals.css` under the CSS variables section.
+`scripts/build-demo.sh` builds a static copy with a "preview" banner, no checkout and forms that only pretend to send. The `Demo site` workflow runs it on every push and publishes it to the `gh-pages` branch, so it appears at `https://<owner>.github.io/<repo>/`. Pages has to be switched on once in the repo's Settings → Pages (source: `gh-pages` branch), and on a free GitHub plan the repo must be public.
 
-## License
+## Review copy (claude.ai artifact)
 
-Private - Built for Razed.
+`python3 scripts/build-artifact.py > docs/preview/site-preview.html` (after `scripts/build-demo.sh`) bundles the whole site into one page with tab-style views, for commenting on as a claude.ai artifact.
+
+## Deploy
+
+It deploys to Vercel with zero configuration, or to Render as a Node web service (`npm install && npm run build`, start `npm start`).
+
+## Still needed from the client
+
+Search the code for `TODO(client)` to find each spot.
+
+- [ ] Trademark and domain check for the name (see brand kit)
+- [ ] Prices and Stripe Payment Links for the three kits and Chromatones
+- [ ] Contact email, phone, address, legal entity name
+- [ ] Product photography, plus the original logo files and video IDs
+- [ ] The 26 study report PDFs (authors, dates, sample sizes)
+- [ ] Content of the old Distribution, Snapshot, WHEENS and Login pages
+- [ ] The six original Snapshot questions (current ones follow the same themes)
+- [ ] Robert Anthony Aviles's exact quote, team names and photos, company location
+- [ ] Partner store links and permission to name partners
+- [ ] Counsel review of the core claim, disclaimer and legal pages
