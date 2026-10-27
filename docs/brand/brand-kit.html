@@ -1,0 +1,262 @@
+<title>Sonaura Brand Kit</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&display=swap">
+<style>
+/* Layout: a score sheet. One narrow reading column, sections marked like movements, swatches and specimens break wider. */
+:root {
+  --bg: #F7F2EA; --surface: #FFFFFF; --sunk: #ECE6DB;
+  --fg: #16153F; --muted: #5E5B6E; --line: rgba(22,21,63,.12);
+  --accent: #7F5C1E; --brass: #B3863A;
+  --display: "Fraunces", Georgia, "Times New Roman", serif;
+  --body: "DM Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+  --bg: #100F2E; --surface: #1A1946; --sunk: #0B0A22; --fg: #F2ECE1; --muted: #B4AFC4; --line: rgba(242,236,225,.14); --accent: #E2C48C; color-scheme: dark; } }
+:root[data-theme="dark"] { --bg: #100F2E; --surface: #1A1946; --sunk: #0B0A22; --fg: #F2ECE1; --muted: #B4AFC4; --line: rgba(242,236,225,.14); --accent: #E2C48C; color-scheme: dark; }
+
+* { box-sizing: border-box; }
+body { background: var(--bg); color: var(--fg); font-family: var(--body); font-size: 17px; line-height: 1.6;
+  padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); padding-block: 0 64px; }
+.wrap { max-width: 1040px; margin: 0 auto; }
+h1, h2, h3 { font-family: var(--display); font-weight: 500; letter-spacing: -.01em; text-wrap: balance; margin: 0; }
+p { margin: 0; }
+.label { font-size: 12px; font-weight: 700; letter-spacing: .18em; text-transform: uppercase; color: var(--accent); }
+.muted { color: var(--muted); }
+
+header.hero { display: grid; grid-template-columns: minmax(0,1.3fr) minmax(0,1fr); gap: 32px; align-items: center; padding-block: 56px 48px; border-bottom: 1px solid var(--line); }
+.hero h1 { font-size: clamp(48px, 9vw, 104px); line-height: .95; margin-top: 16px; }
+.hero h1 em { font-style: italic; color: var(--brass); }
+.hero p.lead { margin-top: 20px; font-size: 19px; max-width: 34ch; color: var(--muted); }
+.hero svg { width: 100%; max-width: 360px; justify-self: end; }
+
+section { display: grid; grid-template-columns: 180px minmax(0,1fr); gap: 32px; padding-block: 48px; border-bottom: 1px solid var(--line); }
+section > .side { display: flex; flex-direction: column; gap: 8px; }
+section > .side .num { font-family: var(--display); font-style: italic; font-size: 15px; color: var(--muted); }
+section > .side h2 { font-size: 26px; }
+.main { display: flex; flex-direction: column; gap: 24px; min-width: 0; }
+.main > p { max-width: 62ch; }
+
+.big { font-family: var(--display); font-size: clamp(30px, 5vw, 48px); line-height: 1.1; }
+.table-wrap { overflow-x: auto; }
+table { border-collapse: collapse; width: 100%; font-size: 15px; }
+th, td { text-align: left; padding: 10px 12px 10px 0; border-bottom: 1px solid var(--line); vertical-align: top; }
+th { font-size: 12px; letter-spacing: .12em; text-transform: uppercase; color: var(--muted); font-weight: 700; }
+tr.pick td:first-child { font-weight: 700; }
+.tag { display: inline-block; font-size: 11px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; background: var(--brass); color: #16153F; border-radius: 999px; padding: 2px 8px; margin-left: 6px; vertical-align: 2px; }
+
+.cols { display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: 16px; }
+.panel { background: var(--surface); border: 1px solid var(--line); border-radius: 16px; padding: 20px; }
+.panel h3 { font-size: 20px; margin-bottom: 8px; }
+.panel ul { margin: 0; padding-left: 18px; }
+.chips { display: flex; flex-wrap: wrap; gap: 8px; }
+.chip { border: 1px solid var(--line); border-radius: 999px; padding: 4px 12px; font-size: 14px; }
+.chip.no { text-decoration: line-through; color: var(--muted); }
+
+.logos { display: grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap: 16px; }
+.logo-tile { border-radius: 16px; aspect-ratio: 4 / 3; display: flex; align-items: center; justify-content: center; padding: 24px; max-width: 100%; }
+.logo-tile.light { background: #F7F2EA; border: 1px solid rgba(22,21,63,.12); }
+.logo-tile.dark { background: #16153F; }
+.logo-tile.rose { background: #6E3B4E; }
+.logo-tile svg { width: 100%; max-width: 240px; }
+.logo-tile.markonly svg { max-width: 96px; }
+.cap { font-size: 13px; color: var(--muted); margin-top: 8px; }
+
+.swatches { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 12px; }
+.sw { border-radius: 14px; overflow: hidden; border: 1px solid var(--line); background: var(--surface); }
+.sw .chipc { height: 96px; display: flex; align-items: flex-end; padding: 10px; font-family: var(--display); font-size: 20px; }
+.sw .meta { padding: 10px 12px; font-size: 13px; }
+.sw .meta b { display: block; font-size: 14px; }
+.sw code { font-variant-numeric: tabular-nums; }
+
+.type-spec { display: grid; gap: 20px; }
+.spec { background: var(--surface); border: 1px solid var(--line); border-radius: 16px; padding: 24px; }
+.spec .d { font-family: var(--display); font-size: clamp(36px, 6vw, 64px); line-height: 1.05; }
+.spec .b { font-family: var(--body); font-size: 18px; max-width: 60ch; }
+.scale { display: flex; flex-wrap: wrap; align-items: baseline; gap: 18px; font-family: var(--display); }
+
+.legend { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 12px; }
+.legend div { background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: 14px; }
+.legend b { font-family: var(--display); font-size: 28px; color: var(--accent); display: block; font-weight: 500; }
+
+.claim { background: #16153F; color: #F7F2EA; border-radius: 20px; padding: 28px; }
+.claim .big { color: #F7F2EA; font-size: clamp(24px, 3.4vw, 32px); }
+.claim .label { color: #E2C48C; }
+
+footer { padding-top: 32px; font-size: 14px; color: var(--muted); }
+
+@media (max-width: 760px) {
+  header.hero { grid-template-columns: 1fr; padding-top: 32px; }
+  .hero svg { justify-self: start; max-width: 220px; }
+  section { grid-template-columns: 1fr; gap: 16px; padding-block: 36px; }
+  .cols, .logos { grid-template-columns: 1fr; }
+}
+@media (prefers-reduced-motion: no-preference) {
+  .hero .wave { stroke-dasharray: 600; stroke-dashoffset: 0; animation: draw 2.4s ease-out both; }
+  @keyframes draw { from { stroke-dashoffset: 600; } to { stroke-dashoffset: 0; } }
+}
+</style>
+
+<div class="wrap">
+  <header class="hero">
+    <div>
+      <p class="label">Brand kit · v1 · working name</p>
+      <h1>sonaura<br><em>Tune your day.</em></h1>
+      <p class="lead">One original piece of music from 1998, built into things you wear, add and carry, and licensed to the brands that make them.</p>
+    </div>
+    <svg viewBox="0 0 400 400" aria-hidden="true">
+      <g fill="none" stroke="var(--line)" stroke-width="1.5">
+        <circle cx="200" cy="200" r="60"/><circle cx="200" cy="200" r="95"/><circle cx="200" cy="200" r="130"/><circle cx="200" cy="200" r="165"/><circle cx="200" cy="200" r="195"/>
+      </g>
+      <path class="wave" d="M0 200 C40 110 80 110 120 200 S200 290 240 200 S320 110 360 200 S400 260 400 230" fill="none" stroke="#B3863A" stroke-width="3" stroke-linecap="round"/>
+      <circle cx="200" cy="200" r="6" fill="#B3863A"/>
+    </svg>
+  </header>
+
+  <section>
+    <div class="side"><span class="num">i.</span><h2>Name</h2></div>
+    <div class="main">
+      <p class="big">Sonaura <span class="muted" style="font-size:.5em">so-NOR-ah</span></p>
+      <p><i>Sono</i>, sound, plus <i>aura</i>, the field around you. It says what the company does in one word: it takes a piece of music and puts it into something you carry. It's a coined word, so it can be owned. A first web search found no wellness, jewelry or cosmetics brand using it.</p>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Option</th><th>Idea</th><th>Watch-out</th></tr></thead>
+          <tbody>
+            <tr class="pick"><td>Sonaura <span class="tag">Pick</span></td><td>Sound + aura</td><td>Needs the formal trademark search before launch</td></tr>
+            <tr><td>Cadenza &amp; Co.</td><td>The violinist's solo passage</td><td>"Cadenza" is widely used, so it's a weak trademark</td></tr>
+            <tr><td>Tonefield</td><td>A tone carried into your field</td><td>Descriptive, so hard to protect</td></tr>
+            <tr><td>Harmona</td><td>From "harmony"</td><td>Close to Harmoniq, an existing wellness patch line</td></tr>
+            <tr><td>Overture</td><td>The opening of a piece</td><td>Common across many trademark classes</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="muted">Before launch: a USPTO search in classes 3, 9, 14 and 41, the .com (fallback: sonaura.co), and matching social handles.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="side"><span class="num">ii.</span><h2>Promise</h2></div>
+    <div class="main">
+      <p class="big">Tune your day.</p>
+      <p>Short, active, and it works on two levels: tuning, as in the music, and getting your day back into balance. It turns every product into a small daily ritual: put on the pendant, add the drops, take the Snapshot, play a program.</p>
+      <div class="cols">
+        <div class="panel"><h3>Positioning</h3><p>For people who want calm, steady everyday energy, and for the brands that make the things those people already use. Sonaura is a sound studio that turns one original composition into objects, liquids and signals you can carry.</p></div>
+        <div class="panel"><h3>Why us</h3><p>Frequency gadgets lead with mechanisms and big promises. Sonaura starts from real music, written in 1998 and played on a 7-string electric violin, and makes one modest, specific claim.</p></div>
+      </div>
+      <p class="muted">Kept from the original site as the brand line: <i>Helping people worldwide, one person at a time, since 1998.</i></p>
+    </div>
+  </section>
+
+  <section>
+    <div class="side"><span class="num">iii.</span><h2>Voice</h2></div>
+    <div class="main">
+      <p>Warm, plain and specific. We sound like a musician explaining their craft, not a lab or a guru.</p>
+      <div class="cols">
+        <div class="panel"><h3>We are</h3><ul><li>Curious and grounded</li><li>Specific: dates, drops, ounces</li><li>Modest about outcomes</li><li>Musical in metaphor</li></ul></div>
+        <div class="panel"><h3>We are not</h3><ul><li>Mystical or preachy</li><li>Vague ("amazing results")</li><li>Promising cures, shields or proof</li><li>Pseudo-technical</li></ul></div>
+      </div>
+      <div>
+        <p class="label" style="margin-bottom:10px">Words we use</p>
+        <div class="chips"><span class="chip">tune</span><span class="chip">carry</span><span class="chip">balance</span><span class="chip">steady</span><span class="chip">settle</span><span class="chip">rhythm</span><span class="chip">everyday</span><span class="chip">wear</span><span class="chip">add</span><span class="chip">notice</span><span class="chip">try</span></div>
+      </div>
+      <div>
+        <p class="label" style="margin-bottom:10px">Never in marketing</p>
+        <div class="chips"><span class="chip no">cure</span><span class="chip no">heal</span><span class="chip no">treat</span><span class="chip no">remedy</span><span class="chip no">shield from EMF</span><span class="chip no">detox</span><span class="chip no">anti-aging</span><span class="chip no">proven</span><span class="chip no">quantum</span><span class="chip no">millions of users</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="side"><span class="num">iv.</span><h2>Logo</h2></div>
+    <div class="main">
+      <p>A ring for the field, with a single wave of sound passing through it, beside a lowercase serif wordmark. The wave always stays brass.</p>
+      <div class="logos">
+        <div>
+          <div class="logo-tile light"><svg viewBox="0 0 220 48" role="img" aria-label="Sonaura logo on ivory"><circle cx="24" cy="24" r="18" fill="none" stroke="#16153F" stroke-width="2.5"/><path d="M4 24 C9 13 14 13 19 24 S29 35 34 24 S39 13 44 24" fill="none" stroke="#B3863A" stroke-width="2.5" stroke-linecap="round"/><text x="58" y="34" font-family="Fraunces, Georgia, serif" font-size="30" font-weight="500" fill="#16153F">sonaura</text></svg></div>
+          <p class="cap">Primary, on Ivory</p>
+        </div>
+        <div>
+          <div class="logo-tile dark"><svg viewBox="0 0 220 48" role="img" aria-label="Sonaura logo on midnight"><circle cx="24" cy="24" r="18" fill="none" stroke="#F7F2EA" stroke-width="2.5"/><path d="M4 24 C9 13 14 13 19 24 S29 35 34 24 S39 13 44 24" fill="none" stroke="#B3863A" stroke-width="2.5" stroke-linecap="round"/><text x="58" y="34" font-family="Fraunces, Georgia, serif" font-size="30" font-weight="500" fill="#F7F2EA">sonaura</text></svg></div>
+          <p class="cap">Reversed, on Midnight</p>
+        </div>
+        <div>
+          <div class="logo-tile rose markonly"><svg viewBox="0 0 48 48" role="img" aria-label="Sonaura mark"><circle cx="24" cy="24" r="18" fill="none" stroke="#F7F2EA" stroke-width="2.5"/><path d="M4 24 C9 13 14 13 19 24 S29 35 34 24 S39 13 44 24" fill="none" stroke="#B3863A" stroke-width="2.5" stroke-linecap="round"/></svg></div>
+          <p class="cap">Mark alone: app icon, favicon, packaging seal</p>
+        </div>
+      </div>
+      <p class="muted">Minimum size: mark 20 px, full logo 96 px wide. Clear space equals the ring's height. Never stretch it, recolor it, or place it on a busy photo without a Midnight scrim. Files: <code>public/brand/</code> in the repo. The wordmark should be outlined by a designer before print.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="side"><span class="num">v.</span><h2>Color</h2></div>
+    <div class="main">
+      <p>Midnight evolves the original site's navy. Brass is the sound: use it sparingly, for the wave, rules and one key button per view.</p>
+      <div class="swatches">
+        <div class="sw"><div class="chipc" style="background:#16153F;color:#F7F2EA">Aa</div><div class="meta"><b>Midnight</b><code>#16153F</code><br>Text, dark sections, logo</div></div>
+        <div class="sw"><div class="chipc" style="background:#F7F2EA;color:#16153F">Aa</div><div class="meta"><b>Ivory</b><code>#F7F2EA</code><br>Page background</div></div>
+        <div class="sw"><div class="chipc" style="background:#B3863A;color:#16153F">Aa</div><div class="meta"><b>Brass</b><code>#B3863A</code><br>Accent, large text only</div></div>
+        <div class="sw"><div class="chipc" style="background:#7F5C1E;color:#F7F2EA">Aa</div><div class="meta"><b>Brass Deep</b><code>#7F5C1E</code><br>Small text and links on Ivory</div></div>
+        <div class="sw"><div class="chipc" style="background:#6E3B4E;color:#F7F2EA">Aa</div><div class="meta"><b>Rosewood</b><code>#6E3B4E</code><br>Consumer highlights</div></div>
+        <div class="sw"><div class="chipc" style="background:#5E5B6E;color:#F7F2EA">Aa</div><div class="meta"><b>Stone</b><code>#5E5B6E</code><br>Muted body text</div></div>
+        <div class="sw"><div class="chipc" style="background:#ECE6DB;color:#16153F">Aa</div><div class="meta"><b>Mist</b><code>#ECE6DB</code><br>Cards and dividers</div></div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="side"><span class="num">vi.</span><h2>Type</h2></div>
+    <div class="main">
+      <div class="type-spec">
+        <div class="spec">
+          <p class="label">Display · Fraunces 400–600</p>
+          <p class="d" style="margin-top:10px">It began as music.</p>
+        </div>
+        <div class="spec">
+          <p class="label">Text · DM Sans 400 / 500 / 700</p>
+          <p class="b" style="margin-top:10px">Add three to five drops of Liquilight to any bottle up to 16 oz: shampoo, lotion, hand soap or your water bottle. Wear the pendant daily. Retake the Snapshot in a month and compare.</p>
+        </div>
+        <div class="spec">
+          <p class="label">Scale, px</p>
+          <div class="scale" style="margin-top:12px"><span style="font-size:14px">14</span><span style="font-size:16px">16</span><span style="font-size:18px">18</span><span style="font-size:22px">22</span><span style="font-size:28px">28</span><span style="font-size:40px">40</span><span style="font-size:56px">56</span><span style="font-size:72px">72</span></div>
+          <p class="muted" style="margin-top:12px">Body at 18 px, line height 1.6. Labels in DM Sans bold caps with 0.18 em tracking.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="side"><span class="num">vii.</span><h2>Imagery</h2></div>
+    <div class="main">
+      <div class="cols">
+        <div class="panel"><h3>Shoot</h3><ul><li>Real hands with real products</li><li>Natural light and warm grain</li><li>The violin, strings and sound waves as recurring motifs</li><li>Everyday rituals: morning pendant, drops in a bottle</li></ul></div>
+        <div class="panel"><h3>Avoid</h3><ul><li>Glowing auras and energy swirls</li><li>Lab coats and fake clinical settings</li><li>Stock "zen" clichés</li><li>Before-and-after body shots</li></ul></div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="side"><span class="num">viii.</span><h2>Product names</h2></div>
+    <div class="main">
+      <p>Product names stay. A visible legend makes them readable.</p>
+      <div class="legend">
+        <div><b>B</b>For people</div><div><b>A</b>For animals</div><div><b>P</b>For plants</div><div><b>Pr</b>For produce and cut flowers</div><div><b>E</b>Rides on Wi-Fi, Bluetooth and phone signals</div><div><b>-C</b>Concentrate</div>
+      </div>
+      <p class="muted">Resolved for the new site (client to confirm): <b>Four-in-One Phone Wave Rider</b>, since the old site also said "Three in One"; and <b>B-Liquilight-C</b> for the 90-drop concentrate.</p>
+    </div>
+  </section>
+
+  <section style="border-bottom:0">
+    <div class="side"><span class="num">ix.</span><h2>The one claim</h2></div>
+    <div class="main">
+      <div class="claim">
+        <p class="label">Always paired with the disclaimer</p>
+        <p class="big" style="margin-top:10px">Products carrying Harmonic Energy help the body's natural energy field hold a balanced, steady state while the product is present.</p>
+      </div>
+      <p>Everything else is story, craft and ritual. Payment processors and ad platforms review health language, so keeping to this one claim protects checkout as well as the brand. Pending counsel sign-off.</p>
+    </div>
+  </section>
+
+  <footer>Sonaura brand kit, version 1. Source of truth: <code>docs/brand/brand-kit.md</code> and <code>lib/brand.ts</code> in the site repository.</footer>
+</div>
