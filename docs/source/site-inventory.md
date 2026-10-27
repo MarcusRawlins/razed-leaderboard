@@ -1,6 +1,6 @@
 # LésAvi Website Content Inventory
 
-2026-10-27 · @Jeff
+Oct 27, 2026 · @Jeff
 
 mylesavi.com has 19 pages: 14 in the menu and 5 hidden pages (a gallery and four sample-kit pages) found through search and in-page links. 15 loaded; 4 blocked automated access (Distribution, Snapshot, WHEENS, Login). Body copy below is paraphrased; headings, product names and labels are as they appear on the site. No prices, SKUs, phone, email or address appear anywhere on the readable pages.
 
@@ -39,14 +39,14 @@ Every page shares the same header menu, footer and cookie banner (see Site-wide)
 
 1. Hero: Vimeo video thumbnail (video ID 1697388089) with no alt text, followed by about 11 empty spacer blocks. Buttons: **Contact Us** → /contact-us, **Shopping** → /shopping.
 2. H2 **Be strong, be age-defiant, be clear of mind**, then bold line **Welcome to LésAvi**.
-    - Intro: the company created a tone that produces a vibration it calls "Harmonic Energy".
-    - Claim: for over three decades, customers worldwide have built the technology into cosmetics, jewelry, music and apparel, helping "millions" of end customers gain vitality and protection.
-    - **Bug:** this paragraph is cut off mid-word (ends "an overall enhanced st").
-    - Buttons: **Go Shopping** → /shopping, **The Tech** → /technologies, **Chromatones** → /chromatones-1.
+   - Intro: the company created a tone that produces a vibration it calls "Harmonic Energy".
+   - Claim: for over three decades, customers worldwide have built the technology into cosmetics, jewelry, music and apparel, helping "millions" of end customers gain vitality and protection.
+   - **Bug:** this paragraph is cut off mid-word (ends "an overall enhanced st").
+   - Buttons: **Go Shopping** → /shopping, **The Tech** → /technologies, **Chromatones** → /chromatones-1.
 3. H4 **Take a quick bioenergetic Snapshot**
-    - Three paragraphs using a sleep analogy: you only notice balance when it is missing; regaining it feels "normal" (better sleep, less hunger, calm, steady energy).
-    - Offer: answer six quick questions to get a personal bioenergetic Snapshot.
-    - Button: **Take Your Snapshot** → /snapshot (page blocked to crawlers).
+   - Three paragraphs using a sleep analogy: you only notice balance when it is missing; regaining it feels "normal" (better sleep, less hunger, calm, steady energy).
+   - Offer: answer six quick questions to get a personal bioenergetic Snapshot.
+   - Button: **Take Your Snapshot** → /snapshot (page blocked to crawlers).
 4. B2B pitch line: the technology gives manufacturers and distributors an edge over competitors. No button attached.
 5. Footer and cookie banner.
 
@@ -61,18 +61,18 @@ The longest page on the site. Roughly 4,000 words, about half of it duplicated.
 1. **Waveform Bioenergetics** — bold tagline "It’s science, naturally." Two paragraphs: similar waveforms reinforce each other, dissimilar ones weaken; products carrying Harmonic Energy synchronize the body's "biofield" when worn, eaten, applied or nearby.
 2. **Four Primary Delivery Methods** — says the waveforms work on people, pets, plants and "even the cells within a piece of lettuce".
 3. Video tab block with garbled labels: PEOPLE ×3, PETS, PEOPLE ×2, PLANTS, PRESERVE ×5. Four embedded Vimeo videos:
-    - [vimeo.com/847135270](https://player.vimeo.com/video/847135270)
-    - [vimeo.com/848516611](https://player.vimeo.com/video/848516611)
-    - [vimeo.com/848520957](https://player.vimeo.com/video/848520957)
-    - [vimeo.com/848519445](https://player.vimeo.com/video/848519445)
+   - [vimeo.com/847135270](https://player.vimeo.com/video/847135270)
+   - [vimeo.com/848516611](https://player.vimeo.com/video/848516611)
+   - [vimeo.com/848520957](https://player.vimeo.com/video/848520957)
+   - [vimeo.com/848519445](https://player.vimeo.com/video/848519445)
 4. History timeline (each with an empty image):
-    - **1990-1998** — *Curiosity, Research and Discovery*
-    - **1998, Harmonic Energy Music (E-Music)** — *BioSonics*
-    - **2003, Five Years Later - Harmonic Energy Biofield Reverberation** — *BioCell*
-    - **2009, Six Years Later - Harmonic Energy EMF Reverberation** — *E-BioCell*
-    - **Two Years Later 2012 - Harmonic Energy Photonics** — *Liquilight*
-    - **2021, Nine Years Later - Harmonic Energy Quantum Unique Information Delivery** — *QUID* (Timeline details are summarized in Company facts.)
-5. **Developing LésAvi’s Waveform Bioenergetic Technologies** — ~10 paragraphs on DNA "sine radio waves", atomic bonding, the "living biofield", cymatics, "Sonic Scripts" built from molecular geometry mapped onto the 12-tone scale, and "Sonic Formulas" layered by rhythm, melody and harmony. Ends with a bold invitation to manufacturers and distributors.
+   - **1990-1998** — *Curiosity, Research and Discovery*
+   - **1998, Harmonic Energy Music (E-Music)** — *BioSonics*
+   - **2003, Five Years Later - Harmonic Energy Biofield Reverberation** — *BioCell*
+   - **2009, Six Years Later - Harmonic Energy EMF Reverberation** — *E-BioCell*
+   - **Two Years Later 2012 - Harmonic Energy Photonics** — *Liquilight*
+   - **2021, Nine Years Later - Harmonic Energy Quantum Unique Information Delivery** — *QUID* (Timeline details are summarized in Company facts.)
+5. **Developing LésAvi’s Waveform Bioenergetic Technologies** — \~10 paragraphs on DNA "sine radio waves", atomic bonding, the "living biofield", cymatics, "Sonic Scripts" built from molecular geometry mapped onto the 12-tone scale, and "Sonic Formulas" layered by rhythm, melody and harmony. Ends with a bold invitation to manufacturers and distributors.
 6. **Discovery**, **Foundations**, **Development**, **Production**, **Results** — the same narrative as item 5, repeated almost word for word in tabbed form.
 7. **What Others Say** — says independent university reviews, lab tests and clinical studies exist. Button: **SEE VALIDATIONS** → /validation.
 8. **Waveform Bioenergetics** (second use of this heading) — summary listing five delivery modes (Sonics, Reverberation, Photonics, Liquilight, Quantum Connection), the tagline again, and a closing pitch: help customers "be strong, be energized, stay youthful, and live protected".
@@ -140,7 +140,7 @@ A directory of third-party stores, not a shop.
 
 1. Intro: partners worldwide; some use the technology secretly, others rebrand it as a headline feature.
 2. Partner brand names mentioned: **NanoVibe** and **Life Armor**. The actual store tiles/links were not captured (likely images or embeds).
-3. Disclaimer: stores are independent; transactions are between buyer and store. **Inconsistent wording: the intro**** says ****stores ****are "highlighted below",**** the ****d****is****claimer says "listed above"****.**
+3. Disclaimer: stores are independent; transactions are between buyer and store. **Inconsistent wording: the intro says stores are "highlighted below", the disclaimer says "listed above".**
 4. Subscription/membership discounts and income-earning affiliate programs mentioned; a link "below" routes people to the best local option (label/URL not captured).
 5. B2B pitch repeated from Home; line "We help to make your customers’ lives better – and you can take all the credit."
 
@@ -255,7 +255,7 @@ The brand name LésAvi likely derives from Aviles, but the site never says so. T
 | Nearly all images empty (no source, no alt) | Kits, Technologies, Gallery | Broken |
 | Paragraph cut off mid-word ("enhanced st") | Home | Broken |
 | Q3 is a stray-dashes heading over a broken embed | Q3 | Broken |
-| ~2,000 words repeated almost verbatim | Technologies | Duplicated |
+| \~2,000 words repeated almost verbatim | Technologies | Duplicated |
 | Video tab labels repeat (PEOPLE ×5, PRESERVE ×5) | Technologies | Broken |
 | "Four Primary Delivery Methods" but five are listed elsewhere | Technologies, Validation | Confusing |
 | Same 13-item menu repeated 3–4× in markup; Login exposed in main nav | Site-wide | Confusing |
@@ -309,7 +309,7 @@ First-pass recommendations from the crawl. Items marked *verify* need a browser 
 - **Images:** almost every in-body image has an empty source. Either the builder is lazy-loading via script (slow, invisible to crawlers) or the images are missing. Collect originals from the client; serve as WebP/AVIF with explicit dimensions and alt text.
 - **Video:** the Home hero is a Vimeo video; Technologies loads four Vimeo players at once. Use a poster image and load players on click, or self-host short loops.
 - **Markup bloat:** the 13-item menu is repeated three or four times per page. One menu, rendered once.
-- **Technologies page:** ~4,000 words with half duplicated. Cut the duplicate and split into tabs or sub-pages.
+- **Technologies page:** \~4,000 words with half duplicated. Cut the duplicate and split into tabs or sub-pages.
 - **Platform:** GoDaddy Website Builder limits caching, image optimization, structured data and checkout. Any modern platform (Webflow, Shopify, WordPress, Framer) is an upgrade; pick based on the Checkout section.
 - **Measure before and after:** run PageSpeed Insights / Lighthouse on the current Home, Technologies and a kit page to set a baseline for the report (*verify*).
 
